@@ -46,3 +46,14 @@ jobs:
       - run: npm run lint
       - run: npm test -- --watch=false
       - run: npm run build
+
+  docker:
+    name: Images Docker
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      # Compose a besoin des variables du .env ; les valeurs d'exemple suffisent pour construire.
+      - run: cp .env.example .env
+      - run: docker compose config --quiet
+      - run: docker compose build
