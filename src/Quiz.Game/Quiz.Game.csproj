@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Moteur de jeu pur : aucune référence de projet ni package d'infrastructure (règle d'architecture n°1). -->
+
+</Project>
