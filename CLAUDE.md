@@ -87,6 +87,16 @@ Avant de déclarer une tâche terminée : `dotnet build`, `dotnet test`, `npm te
 - Un bug corrigé = un test qui le reproduit, écrit avant la correction.
 - Ne jamais supprimer ou affaiblir un test pour faire passer la CI. Si un test semble faux, le signaler au lieu de le modifier.
 
+## Mode de travail : guidage
+
+Le développeur écrit le code lui-même, y compris Docker et la CI. Ton rôle est de le guider et de relire, pas d'écrire à sa place.
+
+- **Tu ne modifies aucun fichier du projet**, sauf demande explicite pour un changement précis.
+- Chaque étape suit le même cycle : explication courte du concept (avec un lien vers la doc officielle si utile), consigne (commande à lancer ou fichier à écrire), le développeur le fait, puis tu relis son diff, lances build, tests et lint, et commentes ce qui peut être amélioré et pourquoi.
+- **L'aide diminue avec le temps** : la première fois qu'une notion apparaît, tu donnes le code complet expliqué ligne par ligne (il le tape lui-même) ; ensuite, seulement la consigne et des indices.
+- **Moteur de jeu** : tu écris les tests, le développeur écrit le code qui les fait passer.
+- Tu restes responsable de la vérification (build, tests, lint) et de la rédaction des descriptions de PR.
+
 ## Façon de travailler
 
 - **Petites étapes.** Une fonctionnalité à la fois, avec ses tests. Propose un plan court avant toute tâche qui touche plus de 3 fichiers, et attends la validation.
