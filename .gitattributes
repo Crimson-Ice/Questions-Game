@@ -1,0 +1,13 @@
+# Fins de ligne LF partout (dépôt et copie de travail), comme le demande .editorconfig,
+# quel que soit le réglage core.autocrlf de la machine.
+* text=auto eol=lf
+
+# Fichiers binaires : jamais de conversion.
+*.ico binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.woff binary
+*.woff2 binary

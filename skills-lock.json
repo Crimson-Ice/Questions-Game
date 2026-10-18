@@ -19,12 +19,6 @@
       "skillPath": "plugins/dotnet-aspnetcore/skills/dotnet-webapi/SKILL.md",
       "computedHash": "9f9ca386ddefb34ebeaf269c6a7dac0bd0a8e9ea901ad5c489cd4d5e7c61fb22"
     },
-    "find-skills": {
-      "source": "vercel-labs/skills",
-      "sourceType": "github",
-      "skillPath": "skills/find-skills/SKILL.md",
-      "computedHash": "b146008599c31057cef1c145774cea5d5afb30e8f43fa802e47a4b461419aaaf"
-    },
     "run-tests": {
       "source": "dotnet/skills",
       "sourceType": "github",
