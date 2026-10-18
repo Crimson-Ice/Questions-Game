@@ -1,0 +1,11 @@
+# Contexte de build de l'API : on n'envoie à Docker que le nécessaire.
+**/bin/
+**/obj/
+.git/
+.github/
+.agents/
+.claude/
+.env
+web/
+tests/
+docs/

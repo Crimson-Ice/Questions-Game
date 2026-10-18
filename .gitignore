@@ -483,3 +483,6 @@ $RECYCLE.BIN/
 
 # Claude Code : réglages locaux
 .claude/settings.local.json
+
+# Variables d'environnement locales
+.env
