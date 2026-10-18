@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "skills": {
+    "angular-developer": {
+      "source": "angular/skills",
+      "sourceType": "github",
+      "skillPath": "angular-developer/SKILL.md",
+      "computedHash": "4f5c15393807fbdfa0c5bed201732b94d903fe010ca1de99ea1b11eadc95f481"
+    },
+    "csharp-xunit": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "skillPath": "skills/csharp-xunit/SKILL.md",
+      "computedHash": "3c224e79f92ec027de3d5f44d0ca3077f076cb1e1bfff6b0db5b09c34c3aecd2"
+    },
+    "dotnet-webapi": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-aspnetcore/skills/dotnet-webapi/SKILL.md",
+      "computedHash": "9f9ca386ddefb34ebeaf269c6a7dac0bd0a8e9ea901ad5c489cd4d5e7c61fb22"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "computedHash": "b146008599c31057cef1c145774cea5d5afb30e8f43fa802e47a4b461419aaaf"
+    },
+    "run-tests": {
+      "source": "dotnet/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dotnet-test/skills/run-tests/SKILL.md",
+      "computedHash": "be6532c323794d90ec9de19b43ddd18d81bed0cedec22571862e8f3de0dc9aaa"
+    }
+  }
+}
