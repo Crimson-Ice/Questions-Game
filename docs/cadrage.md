@@ -181,6 +181,6 @@ Le risque principal est de laisser l'agent IA écrire du code .NET ou Angular no
 - [ ] Nom du projet
 - [ ] Formule de scoring définitive
 - [ ] Nombre maximum de joueurs par session
-- [ ] Choix PostgreSQL ou SQL Server
+- [x] Choix PostgreSQL ou SQL Server → **PostgreSQL** (image Docker légère, en place depuis le jalon 1)
 - [ ] Hébergement de la démo en ligne (VPS ou Azure)
 - [ ] Liste des thèmes de la banque initiale
