@@ -38,3 +38,7 @@ dotnet_naming_symbols.async_methods.required_modifiers = async
 
 dotnet_naming_style.async_suffix.required_suffix = Async
 dotnet_naming_style.async_suffix.capitalization = pascal_case
+
+# Migrations EF Core : code généré, exclu des règles de style
+[**/Migrations/*.cs]
+generated_code = true
