@@ -12,6 +12,10 @@ namespace Quiz.Api.Tests.Infrastructure;
 /// </summary>
 public sealed class QuizApiFactory : WebApplicationFactory<Program>, IAsyncLifetime
 {
+    public const string AdminEmail = "admin@quiz.test";
+
+    public const string AdminPassword = "test-password-1234";
+
     private readonly PostgreSqlContainer _database =
         new PostgreSqlBuilder("postgres:18-alpine").Build();
 
@@ -39,6 +43,9 @@ public sealed class QuizApiFactory : WebApplicationFactory<Program>, IAsyncLifet
     {
         builder.UseSetting("ConnectionStrings:Quiz", _database.GetConnectionString());
         builder.UseSetting("Database:ApplyMigrationsOnStartup", "true");
+        builder.UseSetting("Jwt:SigningKey", "test-signing-key-with-at-least-32-characters");
+        builder.UseSetting("Admin:Email", AdminEmail);
+        builder.UseSetting("Admin:Password", AdminPassword);
     }
 
     async Task IAsyncLifetime.DisposeAsync()

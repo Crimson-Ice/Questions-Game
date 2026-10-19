@@ -1,10 +1,10 @@
 using System.Net;
-using Microsoft.AspNetCore.Mvc.Testing;
+using Quiz.Api.Tests.Infrastructure;
 
 namespace Quiz.Api.Tests;
 
-public class HealthEndpointTests(WebApplicationFactory<Program> factory)
-    : IClassFixture<WebApplicationFactory<Program>>
+[Collection(ApiCollection.Name)]
+public class HealthEndpointTests(QuizApiFactory factory)
 {
     [Fact]
     public async Task GetHealth_ReturnsOkAsync()

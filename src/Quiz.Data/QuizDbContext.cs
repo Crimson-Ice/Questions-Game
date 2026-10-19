@@ -11,6 +11,8 @@ public class QuizDbContext(DbContextOptions<QuizDbContext> options) : DbContext(
 
     public DbSet<Answer> Answers => Set<Answer>();
 
+    public DbSet<AdminUser> AdminUsers => Set<AdminUser>();
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(QuizDbContext).Assembly);
