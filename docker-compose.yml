@@ -24,6 +24,9 @@ services:
     environment:
       Database__ApplyMigrationsOnStartup: "true"
       ConnectionStrings__Quiz: Host=db;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD}
+      Jwt__SigningKey: ${JWT_SIGNING_KEY}
+      Admin__Email: ${ADMIN_EMAIL}
+      Admin__Password: ${ADMIN_PASSWORD}
     depends_on:
       db:
         condition: service_healthy
