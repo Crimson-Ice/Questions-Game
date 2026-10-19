@@ -1,6 +1,7 @@
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Quiz.Api.Auth;
+using Quiz.Api.Themes;
 using Quiz.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -34,5 +35,6 @@ app.UseAuthorization();
 
 app.MapHealthChecks("/health");
 app.MapAuthEndpoints();
+app.MapThemeEndpoints();
 
 app.Run();

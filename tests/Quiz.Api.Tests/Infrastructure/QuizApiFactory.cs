@@ -1,6 +1,9 @@
+using System.Net.Http.Headers;
+using System.Net.Http.Json;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
+using Quiz.Api.Auth;
 using Quiz.Data;
 using Testcontainers.PostgreSql;
 
@@ -25,6 +28,19 @@ public sealed class QuizApiFactory : WebApplicationFactory<Program>, IAsyncLifet
 
         // Accéder à Services démarre l'API, qui applique alors les migrations.
         _ = Services;
+    }
+
+    /// <summary>Client HTTP déjà connecté en tant qu'administrateur (en-tête Authorization: Bearer).</summary>
+    public async Task<HttpClient> CreateAdminClientAsync()
+    {
+        var client = CreateClient();
+        var response = await client.PostAsJsonAsync("/api/auth/login",
+            new LoginRequest { Email = AdminEmail, Password = AdminPassword });
+        response.EnsureSuccessStatusCode();
+
+        var login = await response.Content.ReadFromJsonAsync<LoginResponse>();
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", login!.AccessToken);
+        return client;
     }
 
     /// <summary>
