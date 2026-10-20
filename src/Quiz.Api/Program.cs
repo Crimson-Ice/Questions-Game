@@ -2,6 +2,7 @@ using System.Text.Json.Serialization;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Quiz.Api.Auth;
+using Quiz.Api.Import;
 using Quiz.Api.Questions;
 using Quiz.Api.Themes;
 using Quiz.Data;
@@ -21,6 +22,7 @@ builder.Services.AddSingleton(TimeProvider.System);
 builder.Services.AddProblemDetails();
 builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 builder.Services.AddAdminAuthentication(builder.Configuration);
+builder.Services.AddScoped<QuestionBankImporter>();
 builder.Services.AddHealthChecks();
 
 var app = builder.Build();
@@ -46,5 +48,6 @@ app.MapHealthChecks("/health");
 app.MapAuthEndpoints();
 app.MapThemeEndpoints();
 app.MapQuestionEndpoints();
+app.MapImportEndpoints();
 
 app.Run();

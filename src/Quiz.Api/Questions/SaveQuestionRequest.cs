@@ -6,7 +6,7 @@ namespace Quiz.Api.Questions;
 /// Corps de la création (POST) et de la modification (PUT) d'une question.
 /// En modification, la liste des réponses remplace entièrement les réponses existantes.
 /// </summary>
-public sealed record SaveQuestionRequest
+public sealed record SaveQuestionRequest : IQuestionContent
 {
     public string Text { get; init; } = "";
 
