@@ -28,7 +28,7 @@
           "text": "Sur quel continent se trouve l'Égypte ?",
           "difficulty": "Easy",
           "answers": [
-            { "text": "Asie" },
+            { "text": "Amérique du Sud" },
             { "text": "Europe" },
             { "text": "Afrique", "isCorrect": true },
             { "text": "Océanie" }
@@ -76,7 +76,7 @@
         },
         {
           "text": "Quel est le plus grand désert chaud du monde ?",
-          "difficulty": "Easy",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Le désert de Gobi" },
             { "text": "Le Kalahari" },
@@ -156,7 +156,7 @@
         },
         {
           "text": "Quel est le plus long fleuve d'Europe ?",
-          "difficulty": "Medium",
+          "difficulty": "Hard",
           "answers": [
             { "text": "Le Danube" },
             { "text": "Le Rhin" },
@@ -186,7 +186,7 @@
         },
         {
           "text": "Quelle chaîne de montagnes marque la frontière entre la France et l'Espagne ?",
-          "difficulty": "Medium",
+          "difficulty": "Easy",
           "answers": [
             { "text": "Les Alpes" },
             { "text": "Le Jura" },
@@ -215,7 +215,7 @@
           ]
         },
         {
-          "text": "Quel est le plus grand lac d'Afrique ?",
+          "text": "Quel est le plus grand lac d'Afrique par sa superficie ?",
           "difficulty": "Hard",
           "answers": [
             { "text": "Le lac Victoria", "isCorrect": true },
@@ -226,7 +226,7 @@
         },
         {
           "text": "Quelle est la capitale de la Nouvelle-Zélande ?",
-          "difficulty": "Hard",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Auckland" },
             { "text": "Wellington", "isCorrect": true },
