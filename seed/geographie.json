@@ -1,0 +1,310 @@
+{
+  "themes": [
+    {
+      "name": "Géographie",
+      "icon": "🌍",
+      "questions": [
+        {
+          "text": "Quel est le plus long fleuve de France ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "La Seine" },
+            { "text": "La Loire", "isCorrect": true },
+            { "text": "Le Rhône" },
+            { "text": "La Garonne" }
+          ]
+        },
+        {
+          "text": "Quelle est la capitale de l'Espagne ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Madrid", "isCorrect": true },
+            { "text": "Barcelone" },
+            { "text": "Séville" },
+            { "text": "Valence" }
+          ]
+        },
+        {
+          "text": "Sur quel continent se trouve l'Égypte ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Asie" },
+            { "text": "Europe" },
+            { "text": "Afrique", "isCorrect": true },
+            { "text": "Océanie" }
+          ]
+        },
+        {
+          "text": "Quel est le plus grand océan du monde ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "L'océan Atlantique" },
+            { "text": "L'océan Indien" },
+            { "text": "L'océan Arctique" },
+            { "text": "L'océan Pacifique", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quelle est la capitale de l'Italie ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Milan" },
+            { "text": "Rome", "isCorrect": true },
+            { "text": "Naples" },
+            { "text": "Florence" }
+          ]
+        },
+        {
+          "text": "Quel est le plus haut sommet des Alpes ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Le mont Blanc", "isCorrect": true },
+            { "text": "Le Cervin" },
+            { "text": "Le mont Rose" },
+            { "text": "La barre des Écrins" }
+          ]
+        },
+        {
+          "text": "Quel pays a pour capitale Berlin ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "L'Autriche" },
+            { "text": "La Suisse" },
+            { "text": "L'Allemagne", "isCorrect": true },
+            { "text": "La Pologne" }
+          ]
+        },
+        {
+          "text": "Quel est le plus grand désert chaud du monde ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Le désert de Gobi" },
+            { "text": "Le Kalahari" },
+            { "text": "Le désert d'Atacama" },
+            { "text": "Le Sahara", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quelle mer borde la ville de Marseille ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "La Manche" },
+            { "text": "La mer Méditerranée", "isCorrect": true },
+            { "text": "La mer du Nord" },
+            { "text": "L'océan Atlantique" }
+          ]
+        },
+        {
+          "text": "Quel fleuve traverse Paris ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "La Seine", "isCorrect": true },
+            { "text": "La Loire" },
+            { "text": "La Marne" },
+            { "text": "Le Rhône" }
+          ]
+        },
+        {
+          "text": "Quelle est la capitale de l'Australie ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Sydney" },
+            { "text": "Melbourne" },
+            { "text": "Canberra", "isCorrect": true },
+            { "text": "Perth" }
+          ]
+        },
+        {
+          "text": "Quelle est la capitale du Canada ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Ottawa", "isCorrect": true },
+            { "text": "Toronto" },
+            { "text": "Montréal" },
+            { "text": "Vancouver" }
+          ]
+        },
+        {
+          "text": "Quel est le plus grand pays du monde par sa superficie ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Le Canada" },
+            { "text": "La Chine" },
+            { "text": "Les États-Unis" },
+            { "text": "La Russie", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel pays est devenu le plus peuplé du monde en 2023, selon l'ONU ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "La Chine" },
+            { "text": "L'Inde", "isCorrect": true },
+            { "text": "Les États-Unis" },
+            { "text": "L'Indonésie" }
+          ]
+        },
+        {
+          "text": "Quel détroit sépare l'Espagne du Maroc ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Le détroit du Bosphore" },
+            { "text": "Le détroit d'Ormuz" },
+            { "text": "Le détroit de Gibraltar", "isCorrect": true },
+            { "text": "Le détroit de Magellan" }
+          ]
+        },
+        {
+          "text": "Quel est le plus long fleuve d'Europe ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Le Danube" },
+            { "text": "Le Rhin" },
+            { "text": "Le Dniepr" },
+            { "text": "La Volga", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Dans quel pays se trouve le site du Machu Picchu ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "La Bolivie" },
+            { "text": "Le Pérou", "isCorrect": true },
+            { "text": "Le Mexique" },
+            { "text": "Le Chili" }
+          ]
+        },
+        {
+          "text": "Quelle est la capitale du Brésil ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Brasília", "isCorrect": true },
+            { "text": "Rio de Janeiro" },
+            { "text": "São Paulo" },
+            { "text": "Salvador" }
+          ]
+        },
+        {
+          "text": "Quelle chaîne de montagnes marque la frontière entre la France et l'Espagne ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Les Alpes" },
+            { "text": "Le Jura" },
+            { "text": "Les Pyrénées", "isCorrect": true },
+            { "text": "Les Vosges" }
+          ]
+        },
+        {
+          "text": "Quelle est la capitale de la Turquie ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Istanbul" },
+            { "text": "Izmir" },
+            { "text": "Antalya" },
+            { "text": "Ankara", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Avec combien de pays la France métropolitaine partage-t-elle une frontière terrestre ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "6" },
+            { "text": "7" },
+            { "text": "8", "isCorrect": true },
+            { "text": "9" }
+          ]
+        },
+        {
+          "text": "Quel est le plus grand lac d'Afrique ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Le lac Victoria", "isCorrect": true },
+            { "text": "Le lac Tanganyika" },
+            { "text": "Le lac Malawi" },
+            { "text": "Le lac Tchad" }
+          ]
+        },
+        {
+          "text": "Quelle est la capitale de la Nouvelle-Zélande ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Auckland" },
+            { "text": "Wellington", "isCorrect": true },
+            { "text": "Christchurch" },
+            { "text": "Queenstown" }
+          ]
+        },
+        {
+          "text": "En comptant ses territoires d'outre-mer, quel pays s'étend sur le plus grand nombre de fuseaux horaires ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "La Russie" },
+            { "text": "Les États-Unis" },
+            { "text": "Le Royaume-Uni" },
+            { "text": "La France", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Où se trouve le point le plus profond des océans ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Dans la fosse de Porto Rico" },
+            { "text": "Dans la fosse des Tonga" },
+            { "text": "Dans la fosse des Mariannes", "isCorrect": true },
+            { "text": "Dans la fosse du Japon" }
+          ]
+        },
+        {
+          "text": "Quelle est la capitale du Kazakhstan ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Astana", "isCorrect": true },
+            { "text": "Almaty" },
+            { "text": "Bichkek" },
+            { "text": "Tachkent" }
+          ]
+        },
+        {
+          "text": "Quel fleuve a le plus grand débit du monde ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Le Nil" },
+            { "text": "Le Congo" },
+            { "text": "L'Amazone", "isCorrect": true },
+            { "text": "Le Yangzi Jiang" }
+          ]
+        },
+        {
+          "text": "Dans quel pays se trouve la ville de Tombouctou ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Le Niger" },
+            { "text": "La Mauritanie" },
+            { "text": "Le Burkina Faso" },
+            { "text": "Le Mali", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel est le plus haut sommet d'Afrique ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Le mont Kenya" },
+            { "text": "Le Kilimandjaro", "isCorrect": true },
+            { "text": "Le mont Stanley" },
+            { "text": "Le mont Cameroun" }
+          ]
+        },
+        {
+          "text": "Quel pays est traversé à la fois par l'équateur et par le tropique du Capricorne ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Le Brésil", "isCorrect": true },
+            { "text": "L'Argentine" },
+            { "text": "L'Indonésie" },
+            { "text": "L'Australie" }
+          ]
+        }
+      ]
+    }
+  ]
+}
