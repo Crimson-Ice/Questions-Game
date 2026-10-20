@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, computed, inject, signal } from '@angular/core';
+import { Injectable, inject, signal } from '@angular/core';
 import { Observable, map, tap } from 'rxjs';
 import { LoginResponse } from './auth.model';
 
@@ -14,13 +14,19 @@ export class AuthService {
   private readonly http = inject(HttpClient);
   private readonly session = signal<LoginResponse | null>(readStoredSession());
 
-  /** Jeton à envoyer à l'API, ou null si personne n'est connecté. */
-  readonly token = computed(() => this.session()?.accessToken ?? null);
+  /**
+   * Jeton à envoyer à l'API, ou null si personne n'est connecté ou si le jeton a expiré.
+   * C'est une méthode et non un computed : l'expiration dépend de l'heure, qu'un computed
+   * ne surveille pas (il ne se recalcule que quand la session change).
+   */
+  token(): string | null {
+    const session = this.session();
+    return session !== null && Date.parse(session.expiresAt) > Date.now() ? session.accessToken : null;
+  }
 
   /** Vrai si un jeton est présent et pas encore expiré. */
   isLoggedIn(): boolean {
-    const session = this.session();
-    return session !== null && Date.parse(session.expiresAt) > Date.now();
+    return this.token() !== null;
   }
 
   login(email: string, password: string): Observable<void> {
@@ -46,8 +52,19 @@ function readStoredSession(): LoginResponse | null {
   }
 
   try {
-    return JSON.parse(stored) as LoginResponse;
+    const value: unknown = JSON.parse(stored);
+    return isLoginResponse(value) ? value : null;
   } catch {
     return null;
   }
+}
+
+/** sessionStorage peut contenir n'importe quoi : on vérifie la forme au lieu de la supposer. */
+function isLoginResponse(value: unknown): value is LoginResponse {
+  if (typeof value !== 'object' || value === null) {
+    return false;
+  }
+
+  const { accessToken, expiresAt } = value as Record<string, unknown>;
+  return typeof accessToken === 'string' && typeof expiresAt === 'string';
 }

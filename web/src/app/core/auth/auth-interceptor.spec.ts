@@ -43,6 +43,12 @@ describe('authInterceptor', () => {
     expect(backend.expectOne('/assets/config.json').request.headers.has('Authorization')).toBe(false);
   });
 
+  it('never sends the token to another origin, even on an /api path', () => {
+    http.get('https://exemple.test/api/x').subscribe();
+
+    expect(backend.expectOne('https://exemple.test/api/x').request.headers.has('Authorization')).toBe(false);
+  });
+
   it('logs out and redirects to the login page when the API answers 401', () => {
     http.get('/api/admin/themes').subscribe({ error: () => undefined });
 

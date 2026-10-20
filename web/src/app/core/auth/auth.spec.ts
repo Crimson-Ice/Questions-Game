@@ -53,6 +53,16 @@ describe('AuthService', () => {
     const { auth } = setup();
 
     expect(auth.isLoggedIn()).toBe(false);
+    expect(auth.token()).toBeNull();
+  });
+
+  it('ignores a stored session with an unexpected shape', () => {
+    sessionStorage.setItem(storageKey, JSON.stringify({ accessToken: 'jeton' }));
+
+    const { auth } = setup();
+
+    expect(auth.isLoggedIn()).toBe(false);
+    expect(auth.token()).toBeNull();
   });
 
   it('ignores a corrupted stored session', () => {
