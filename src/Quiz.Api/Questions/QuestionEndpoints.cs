@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
+using Quiz.Api.Paging;
 using Quiz.Api.Validation;
 using Quiz.Data;
 using Quiz.Data.Entities;
@@ -11,14 +12,47 @@ public static class QuestionEndpoints
 {
     private const string GetQuestionRoute = "GetQuestion";
 
+    private const string LikeEscapeCharacter = "\\";
+
     public static void MapQuestionEndpoints(this WebApplication app)
     {
         var questions = app.MapGroup("/api/admin/questions").RequireAuthorization();
 
+        questions.MapGet("/", ListAsync).AddEndpointFilter<ValidationFilter<QuestionListQuery>>();
         questions.MapGet("/{id:int}", GetAsync).WithName(GetQuestionRoute);
         questions.MapPost("/", CreateAsync).AddEndpointFilter<ValidationFilter<SaveQuestionRequest>>();
         questions.MapPut("/{id:int}", UpdateAsync).AddEndpointFilter<ValidationFilter<SaveQuestionRequest>>();
         questions.MapDelete("/{id:int}", DeleteAsync);
+    }
+
+    private static async Task<Ok<PagedResponse<QuestionSummaryResponse>>> ListAsync(
+        [AsParameters] QuestionListQuery query, QuizDbContext db, CancellationToken cancellationToken)
+    {
+        var questions = db.Questions.AsQueryable();
+        if (query.ThemeId is { } themeId)
+        {
+            questions = questions.Where(q => q.ThemeId == themeId);
+        }
+
+        if (!string.IsNullOrWhiteSpace(query.Search))
+        {
+            // ILIKE : recherche sans tenir compte de la casse. Les jokers % et _ tapés par
+            // l'utilisateur sont échappés pour être cherchés tels quels.
+            var pattern = $"%{EscapeLikePattern(query.Search.Trim())}%";
+            questions = questions.Where(q => EF.Functions.ILike(q.Text, pattern, LikeEscapeCharacter));
+        }
+
+        var totalCount = await questions.CountAsync(cancellationToken);
+        var items = await questions
+            .OrderByDescending(q => q.CreatedAt)
+            .ThenByDescending(q => q.Id)
+            .Skip((query.Page - 1) * query.PageSize)
+            .Take(query.PageSize)
+            .Select(q => new QuestionSummaryResponse(
+                q.Id, q.Text, q.ThemeId, q.Theme.Name, q.Difficulty, q.Answers.Count, q.CreatedAt))
+            .ToListAsync(cancellationToken);
+
+        return TypedResults.Ok(new PagedResponse<QuestionSummaryResponse>(items, query.Page, query.PageSize, totalCount));
     }
 
     private static async Task<Results<Ok<QuestionResponse>, NotFound>> GetAsync(
@@ -98,6 +132,11 @@ public static class QuestionEndpoints
                 q.CreatedAt,
                 q.Answers.OrderBy(a => a.Id).Select(a => new AnswerResponse(a.Id, a.Text, a.IsCorrect)).ToList()))
             .SingleOrDefaultAsync(cancellationToken);
+
+    private static string EscapeLikePattern(string value) =>
+        value.Replace(LikeEscapeCharacter, LikeEscapeCharacter + LikeEscapeCharacter)
+            .Replace("%", LikeEscapeCharacter + "%")
+            .Replace("_", LikeEscapeCharacter + "_");
 
     private static ValidationProblem UnknownTheme() =>
         TypedResults.ValidationProblem(new Dictionary<string, string[]>
