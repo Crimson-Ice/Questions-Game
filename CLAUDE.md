@@ -95,6 +95,28 @@ Tu écris le code (applicatif, tests, Docker, CI), tu commites, tu pousses et tu
 - Tu restes responsable de la vérification (build, tests, lint) avant d'ouvrir la PR.
 - Les règles de « Façon de travailler » restent valables : plan court avant toute tâche qui touche plus de 3 fichiers, dépendances nouvelles signalées.
 
+### Rôle du développeur : consultant technique et fonctionnel
+
+Le développeur ne pilote pas tâche par tâche : il valide les plans, tranche les questions fonctionnelles et relit les PR. Tu fais avancer le projet jalon par jalon, en suivant `docs/cadrage.md`.
+
+Cycle d'une tâche :
+
+1. **Plan** : annonce en une ligne la tâche choisie. Si elle touche plus de 3 fichiers, propose un plan court et attends sa validation.
+2. **Code** : implémente avec les tests, puis vérifie (build, tests, lint).
+3. **Relecture automatique** : avant d'ouvrir la PR, lance l'agent `pr-reviewer` sur la branche locale. Corrige les points bloquants et importants, puis relance l'agent si tu as corrigé un point bloquant. Résume le rapport dans la section **Relecture automatique** de la description de PR.
+4. **PR** : ouvre la PR et arrête-toi là. Le développeur la relit et la merge lui-même.
+5. **Suite** : quand le développeur annonce que la PR est mergée, mets `main` à jour et enchaîne sur la tâche suivante du jalon en cours, en reprenant à l'étape 1. La tâche suivante du jalon en cours compte comme demandée, au sens de la règle « Pas d'anticipation ».
+
+Arrête-toi et pose la question dans ces cas :
+
+- une décision fonctionnelle non couverte par le cadrage ;
+- une nouvelle dépendance ;
+- un conflit avec ce fichier ;
+- un test qui semble faux ;
+- une CI rouge que tu ne sais pas corriger ;
+- un point bloquant de `pr-reviewer` que tu contestes ;
+- la fin d'un jalon : fais le bilan et attends l'accord du développeur avant d'attaquer le suivant.
+
 ## Façon de travailler
 
 - **Petites étapes.** Une fonctionnalité à la fois, avec ses tests. Propose un plan court avant toute tâche qui touche plus de 3 fichiers, et attends la validation.
@@ -113,6 +135,7 @@ Tu écris le code (applicatif, tests, Docker, CI), tu commites, tu pousses et tu
   - **Choix techniques** : les décisions non évidentes et les alternatives écartées.
   - **Tests** : ce qui est testé, et comment vérifier à la main si besoin.
   - **Points d'attention** : ce que le relecteur doit regarder de près.
+  - **Relecture automatique** : verdict de `pr-reviewer`, ce qui a été corrigé, ce qui reste à discuter.
 - **La CI doit être verte** avant le merge. Ne jamais contourner une CI rouge.
 - Les PR sont relues et mergées par le développeur, jamais par toi. Ton rôle s'arrête à l'ouverture de la PR (avec `gh pr create` si disponible).
 - Merge en **squash** : le titre de la PR suit le même format que les commits et devient le commit sur `main`.
