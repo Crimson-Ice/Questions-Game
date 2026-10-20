@@ -1,4 +1,5 @@
 using Quiz.Api.Questions;
+using Quiz.Data.Entities;
 
 namespace Quiz.Api.Tests.Questions;
 
@@ -46,6 +47,25 @@ public class SaveQuestionRequestValidatorTests
         var result = _validator.Validate(Request(answerCount: 2, correctCount: 1) with { Answers = null! });
 
         Assert.Contains(result.Errors, e => e.PropertyName == nameof(SaveQuestionRequest.Answers));
+    }
+
+    [Fact]
+    public void Validate_WithNullAnswer_IsInvalid()
+    {
+        var request = Request(answerCount: 2, correctCount: 1);
+        request.Answers[1] = null!;
+
+        var result = _validator.Validate(request);
+
+        Assert.Contains(result.Errors, e => e.PropertyName == "Answers[1]");
+    }
+
+    [Fact]
+    public void Validate_WithUnknownDifficulty_IsInvalid()
+    {
+        var result = _validator.Validate(Request(answerCount: 2, correctCount: 1) with { Difficulty = (Difficulty)7 });
+
+        Assert.Contains(result.Errors, e => e.PropertyName == nameof(SaveQuestionRequest.Difficulty));
     }
 
     [Theory]

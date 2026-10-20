@@ -26,9 +26,11 @@ public sealed class SaveQuestionRequestValidator : AbstractValidator<SaveQuestio
             .Must(answers => answers?.Count is >= MinAnswers and <= MaxAnswers)
             .WithMessage($"Une question doit avoir entre {MinAnswers} et {MaxAnswers} réponses.");
         RuleFor(r => r.Answers)
-            .Must(answers => answers?.Count(a => a.IsCorrect) == 1)
+            .Must(answers => answers?.Count(a => a?.IsCorrect == true) == 1)
             .WithMessage("Une question doit avoir exactement une bonne réponse.");
 
+        // Le JSON "answers": [null, …] est accepté par le désérialiseur : on le refuse ici.
+        RuleForEach(r => r.Answers).NotNull().WithMessage("Une réponse ne peut pas être vide.");
         RuleForEach(r => r.Answers).ChildRules(answer =>
         {
             answer.RuleFor(a => a.Text).Must(text => !string.IsNullOrWhiteSpace(text))

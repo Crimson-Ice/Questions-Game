@@ -44,6 +44,19 @@ public class QuestionEndpointsTests(QuizApiFactory factory)
     }
 
     [Fact]
+    public async Task UpdateAndDelete_WithoutToken_ReturnUnauthorizedAsync()
+    {
+        using var client = factory.CreateClient();
+        var themeId = await CreateThemeInDatabaseAsync();
+
+        var update = await client.PutAsJsonAsync($"{Route}/1", ValidRequest(themeId), _json);
+        var delete = await client.DeleteAsync($"{Route}/1");
+
+        Assert.Equal(HttpStatusCode.Unauthorized, update.StatusCode);
+        Assert.Equal(HttpStatusCode.Unauthorized, delete.StatusCode);
+    }
+
+    [Fact]
     public async Task Create_ReturnsCreatedQuestionWithLocationAsync()
     {
         using var client = await factory.CreateAdminClientAsync();

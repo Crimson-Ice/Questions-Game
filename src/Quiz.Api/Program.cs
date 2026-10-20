@@ -15,6 +15,9 @@ builder.Services.AddDbContext<QuizDbContext>(options =>
 builder.Services.ConfigureHttpJsonOptions(options =>
     options.SerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 
+// Horloge partagée (jetons JWT, date de création des questions), remplaçable dans les tests.
+builder.Services.AddSingleton(TimeProvider.System);
+
 builder.Services.AddProblemDetails();
 builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 builder.Services.AddAdminAuthentication(builder.Configuration);
