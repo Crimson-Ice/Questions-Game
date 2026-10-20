@@ -225,7 +225,7 @@
           ]
         },
         {
-          "text": "Quel film détient, avec « Titanic » et « Le Retour du roi », le record de 11 Oscars remportés ?",
+          "text": "Quel film a été le premier à remporter 11 Oscars, un total égalé depuis par « Titanic » et « Le Retour du roi » ?",
           "difficulty": "Hard",
           "answers": [
             { "text": "Autant en emporte le vent" },
@@ -275,7 +275,7 @@
           ]
         },
         {
-          "text": "Quelle actrice détient le record de quatre Oscars de la meilleure actrice ?",
+          "text": "Quelle actrice a été la première à remporter quatre Oscars de la meilleure actrice ?",
           "difficulty": "Hard",
           "answers": [
             { "text": "Meryl Streep" },

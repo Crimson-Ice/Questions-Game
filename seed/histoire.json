@@ -75,13 +75,13 @@
           ]
         },
         {
-          "text": "Quel paquebot a coulé en 1912 après avoir heurté un iceberg ?",
+          "text": "Quel monument parisien a été construit pour l'Exposition universelle de 1889 ?",
           "difficulty": "Easy",
           "answers": [
-            { "text": "Le Lusitania" },
-            { "text": "Le Queen Mary" },
-            { "text": "Le Britannic" },
-            { "text": "Le Titanic", "isCorrect": true }
+            { "text": "L'Arc de triomphe" },
+            { "text": "Le Sacré-Cœur" },
+            { "text": "Le Grand Palais" },
+            { "text": "La tour Eiffel", "isCorrect": true }
           ]
         },
         {
