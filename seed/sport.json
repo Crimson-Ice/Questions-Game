@@ -26,7 +26,7 @@
         },
         {
           "text": "Dans quel sport utilise-t-on une raquette et un volant ?",
-          "difficulty": "Easy",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Le tennis" },
             { "text": "Le squash" },
@@ -86,7 +86,7 @@
         },
         {
           "text": "Quel sport se joue à six contre six, de part et d'autre d'un filet, avec un ballon qu'on ne doit pas laisser tomber ?",
-          "difficulty": "Easy",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Le handball" },
             { "text": "Le volley-ball", "isCorrect": true },
@@ -111,11 +111,11 @@
             { "text": "3" },
             { "text": "4" },
             { "text": "5", "isCorrect": true },
-            { "text": "7" }
+            { "text": "6" }
           ]
         },
         {
-          "text": "Combien de sets faut-il gagner pour remporter un match masculin en Grand Chelem ?",
+          "text": "Combien de sets faut-il gagner pour remporter un match de simple messieurs en Grand Chelem ?",
           "difficulty": "Medium",
           "answers": [
             { "text": "2" },
@@ -126,7 +126,7 @@
         },
         {
           "text": "Quelle est la distance officielle d'un marathon ?",
-          "difficulty": "Medium",
+          "difficulty": "Hard",
           "answers": [
             { "text": "40 km" },
             { "text": "42 km" },
@@ -146,7 +146,7 @@
         },
         {
           "text": "Dans quel pays sont nés les Jeux olympiques de l'Antiquité ?",
-          "difficulty": "Medium",
+          "difficulty": "Easy",
           "answers": [
             { "text": "L'Italie" },
             { "text": "La Grèce", "isCorrect": true },
@@ -176,7 +176,7 @@
         },
         {
           "text": "Dans quel sport Marie-José Pérec a-t-elle remporté trois titres olympiques ?",
-          "difficulty": "Medium",
+          "difficulty": "Hard",
           "answers": [
             { "text": "L'athlétisme", "isCorrect": true },
             { "text": "La natation" },
@@ -186,7 +186,7 @@
         },
         {
           "text": "Combien de temps dure un match de football, hors arrêts de jeu et prolongations ?",
-          "difficulty": "Medium",
+          "difficulty": "Easy",
           "answers": [
             { "text": "80 minutes" },
             { "text": "90 minutes", "isCorrect": true },
@@ -196,7 +196,7 @@
         },
         {
           "text": "Quel pilote allemand a remporté sept titres de champion du monde de Formule 1 ?",
-          "difficulty": "Medium",
+          "difficulty": "Hard",
           "answers": [
             { "text": "Sebastian Vettel" },
             { "text": "Nico Rosberg" },
@@ -211,12 +211,12 @@
             { "text": "1888" },
             { "text": "1896", "isCorrect": true },
             { "text": "1900" },
-            { "text": "1924" }
+            { "text": "1906" }
           ]
         },
         {
-          "text": "Qui est à l'origine de la rénovation des Jeux olympiques à la fin du XIXe siècle ?",
-          "difficulty": "Hard",
+          "text": "Qui est considéré comme le rénovateur des Jeux olympiques modernes ?",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Jules Rimet" },
             { "text": "Henri Desgrange" },
@@ -276,7 +276,7 @@
         },
         {
           "text": "Combien de joueurs par équipe sont sur le terrain au handball, gardien compris ?",
-          "difficulty": "Hard",
+          "difficulty": "Medium",
           "answers": [
             { "text": "6" },
             { "text": "7", "isCorrect": true },
@@ -286,7 +286,7 @@
         },
         {
           "text": "Quel boxeur, né Cassius Clay, se surnommait lui-même « The Greatest » ?",
-          "difficulty": "Hard",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Joe Frazier" },
             { "text": "George Foreman" },
