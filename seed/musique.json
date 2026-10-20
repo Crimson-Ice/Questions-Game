@@ -1,0 +1,310 @@
+{
+  "themes": [
+    {
+      "name": "Musique",
+      "icon": "🎵",
+      "questions": [
+        {
+          "text": "Combien de cordes a une guitare classique ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "4" },
+            { "text": "6", "isCorrect": true },
+            { "text": "5" },
+            { "text": "12" }
+          ]
+        },
+        {
+          "text": "Quel chanteur était surnommé « le King » ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Elvis Presley", "isCorrect": true },
+            { "text": "Frank Sinatra" },
+            { "text": "Johnny Hallyday" },
+            { "text": "Chuck Berry" }
+          ]
+        },
+        {
+          "text": "Qui était surnommé « le roi de la pop » ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Prince" },
+            { "text": "Freddie Mercury" },
+            { "text": "Michael Jackson", "isCorrect": true },
+            { "text": "George Michael" }
+          ]
+        },
+        {
+          "text": "De quel pays le groupe ABBA est-il originaire ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "La Norvège" },
+            { "text": "Le Danemark" },
+            { "text": "Les Pays-Bas" },
+            { "text": "La Suède", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel groupe britannique comptait John Lennon et Paul McCartney ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Les Rolling Stones" },
+            { "text": "Les Beatles", "isCorrect": true },
+            { "text": "Queen" },
+            { "text": "The Who" }
+          ]
+        },
+        {
+          "text": "Quelle chanteuse a créé « La Vie en rose » ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Édith Piaf", "isCorrect": true },
+            { "text": "Dalida" },
+            { "text": "Barbara" },
+            { "text": "Juliette Gréco" }
+          ]
+        },
+        {
+          "text": "Combien de musiciens compte un quatuor ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "3" },
+            { "text": "5" },
+            { "text": "4", "isCorrect": true },
+            { "text": "8" }
+          ]
+        },
+        {
+          "text": "Quel compositeur, devenu sourd, a écrit la symphonie qui contient l'« Ode à la joie » ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Wolfgang Amadeus Mozart" },
+            { "text": "Jean-Sébastien Bach" },
+            { "text": "Frédéric Chopin" },
+            { "text": "Ludwig van Beethoven", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel chanteur de Queen interprétait « Bohemian Rhapsody » ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Brian May" },
+            { "text": "Freddie Mercury", "isCorrect": true },
+            { "text": "David Bowie" },
+            { "text": "Elton John" }
+          ]
+        },
+        {
+          "text": "De quel instrument joue-t-on avec un archet ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Le violon", "isCorrect": true },
+            { "text": "La trompette" },
+            { "text": "La harpe" },
+            { "text": "Le piano" }
+          ]
+        },
+        {
+          "text": "Combien de touches compte un piano standard ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "76" },
+            { "text": "92" },
+            { "text": "88", "isCorrect": true },
+            { "text": "100" }
+          ]
+        },
+        {
+          "text": "Quel compositeur a écrit l'opéra « La Flûte enchantée » ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Wolfgang Amadeus Mozart", "isCorrect": true },
+            { "text": "Joseph Haydn" },
+            { "text": "Franz Schubert" },
+            { "text": "Johann Strauss" }
+          ]
+        },
+        {
+          "text": "Quel compositeur français a écrit le « Boléro » (1928) ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Claude Debussy" },
+            { "text": "Erik Satie" },
+            { "text": "Georges Bizet" },
+            { "text": "Maurice Ravel", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel opéra de Georges Bizet a pour héroïne une cigarière de Séville ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "La Traviata" },
+            { "text": "Carmen", "isCorrect": true },
+            { "text": "Aida" },
+            { "text": "Tosca" }
+          ]
+        },
+        {
+          "text": "Quel duo français était formé de Thomas Bangalter et Guy-Manuel de Homem-Christo ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Justice" },
+            { "text": "Air" },
+            { "text": "Daft Punk", "isCorrect": true },
+            { "text": "Phoenix" }
+          ]
+        },
+        {
+          "text": "Combien de lignes compte une portée musicale ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "5", "isCorrect": true },
+            { "text": "4" },
+            { "text": "6" },
+            { "text": "7" }
+          ]
+        },
+        {
+          "text": "Quel rappeur américain a sorti l'album « The Marshall Mathers LP » ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Jay-Z" },
+            { "text": "Dr. Dre" },
+            { "text": "50 Cent" },
+            { "text": "Eminem", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel chanteur belge a écrit et interprété « Ne me quitte pas » ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Charles Aznavour" },
+            { "text": "Jacques Brel", "isCorrect": true },
+            { "text": "Georges Brassens" },
+            { "text": "Léo Ferré" }
+          ]
+        },
+        {
+          "text": "Dans quelle ville le jazz est-il traditionnellement considéré comme né ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Chicago" },
+            { "text": "New York" },
+            { "text": "La Nouvelle-Orléans", "isCorrect": true },
+            { "text": "Memphis" }
+          ]
+        },
+        {
+          "text": "Quel groupe a sorti l'album « The Dark Side of the Moon » en 1973 ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Pink Floyd", "isCorrect": true },
+            { "text": "Led Zeppelin" },
+            { "text": "Genesis" },
+            { "text": "The Doors" }
+          ]
+        },
+        {
+          "text": "Quel compositeur a écrit « Les Quatre Saisons » ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Jean-Sébastien Bach" },
+            { "text": "Antonio Vivaldi", "isCorrect": true },
+            { "text": "Georg Friedrich Haendel" },
+            { "text": "Arcangelo Corelli" }
+          ]
+        },
+        {
+          "text": "Quel est le nom de scène de Stefani Germanotta ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Katy Perry" },
+            { "text": "Madonna" },
+            { "text": "Lady Gaga", "isCorrect": true },
+            { "text": "Rihanna" }
+          ]
+        },
+        {
+          "text": "Combien de cordes a un violon ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "3" },
+            { "text": "5" },
+            { "text": "6" },
+            { "text": "4", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel compositeur a écrit l'opéra « La Traviata » ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Giuseppe Verdi", "isCorrect": true },
+            { "text": "Giacomo Puccini" },
+            { "text": "Gioachino Rossini" },
+            { "text": "Vincenzo Bellini" }
+          ]
+        },
+        {
+          "text": "Quel festival s'est tenu en août 1969 près de Bethel, dans l'État de New York ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Coachella" },
+            { "text": "Glastonbury" },
+            { "text": "Woodstock", "isCorrect": true },
+            { "text": "Le festival de Monterey" }
+          ]
+        },
+        {
+          "text": "Quel trompettiste de jazz était surnommé « Satchmo » ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Miles Davis" },
+            { "text": "Dizzy Gillespie" },
+            { "text": "Chet Baker" },
+            { "text": "Louis Armstrong", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel instrument fait de faisceaux lumineux Jean-Michel Jarre a-t-il rendu célèbre sur scène ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "La harpe laser", "isCorrect": true },
+            { "text": "Le thérémine" },
+            { "text": "Les ondes Martenot" },
+            { "text": "Le vocodeur" }
+          ]
+        },
+        {
+          "text": "En quelle année est sorti l'album « Thriller » ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "1979" },
+            { "text": "1982", "isCorrect": true },
+            { "text": "1984" },
+            { "text": "1987" }
+          ]
+        },
+        {
+          "text": "Quel compositeur a écrit les « Concertos brandebourgeois » ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Georg Philipp Telemann" },
+            { "text": "Georg Friedrich Haendel" },
+            { "text": "Jean-Sébastien Bach", "isCorrect": true },
+            { "text": "Ludwig van Beethoven" }
+          ]
+        },
+        {
+          "text": "Quelle lettre désigne la note « la » dans la notation anglo-saxonne ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "C" },
+            { "text": "G" },
+            { "text": "E" },
+            { "text": "A", "isCorrect": true }
+          ]
+        }
+      ]
+    }
+  ]
+}
