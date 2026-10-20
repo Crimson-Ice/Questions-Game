@@ -1,0 +1,310 @@
+{
+  "themes": [
+    {
+      "name": "Histoire",
+      "icon": "📜",
+      "questions": [
+        {
+          "text": "En quelle année a eu lieu la prise de la Bastille ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "1776" },
+            { "text": "1789", "isCorrect": true },
+            { "text": "1792" },
+            { "text": "1815" }
+          ]
+        },
+        {
+          "text": "Quel roi de France était surnommé « le Roi-Soleil » ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Louis XIV", "isCorrect": true },
+            { "text": "Louis XVI" },
+            { "text": "François Ier" },
+            { "text": "Henri IV" }
+          ]
+        },
+        {
+          "text": "Quel empereur français a fini sa vie en exil sur l'île de Sainte-Hélène ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Napoléon III" },
+            { "text": "Charlemagne" },
+            { "text": "Napoléon Ier", "isCorrect": true },
+            { "text": "Louis-Philippe" }
+          ]
+        },
+        {
+          "text": "En quelle année l'homme a-t-il marché sur la Lune pour la première fois ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "1961" },
+            { "text": "1965" },
+            { "text": "1972" },
+            { "text": "1969", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quelle civilisation a bâti les pyramides de Gizeh ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Les Romains" },
+            { "text": "Les Égyptiens", "isCorrect": true },
+            { "text": "Les Grecs" },
+            { "text": "Les Mayas" }
+          ]
+        },
+        {
+          "text": "Quelle jeune femme a mené les troupes françaises pendant la guerre de Cent Ans, avant d'être brûlée à Rouen ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Jeanne d'Arc", "isCorrect": true },
+            { "text": "Catherine de Médicis" },
+            { "text": "Aliénor d'Aquitaine" },
+            { "text": "Marie-Antoinette" }
+          ]
+        },
+        {
+          "text": "En quelle année le mur de Berlin est-il tombé ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "1961" },
+            { "text": "1985" },
+            { "text": "1989", "isCorrect": true },
+            { "text": "1991" }
+          ]
+        },
+        {
+          "text": "Quel paquebot a coulé en 1912 après avoir heurté un iceberg ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Le Lusitania" },
+            { "text": "Le Queen Mary" },
+            { "text": "Le Britannic" },
+            { "text": "Le Titanic", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "À quelle date a eu lieu le débarquement allié en Normandie ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Le 6 juin 1944", "isCorrect": true },
+            { "text": "Le 8 mai 1945" },
+            { "text": "Le 11 novembre 1918" },
+            { "text": "Le 14 juillet 1944" }
+          ]
+        },
+        {
+          "text": "Qui fut le premier président des États-Unis ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Abraham Lincoln" },
+            { "text": "George Washington", "isCorrect": true },
+            { "text": "Thomas Jefferson" },
+            { "text": "Benjamin Franklin" }
+          ]
+        },
+        {
+          "text": "En quelle année Christophe Colomb a-t-il atteint l'Amérique pour la première fois ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "1453" },
+            { "text": "1498" },
+            { "text": "1492", "isCorrect": true },
+            { "text": "1515" }
+          ]
+        },
+        {
+          "text": "Quelle reine de France a été guillotinée en 1793 ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Marie-Antoinette", "isCorrect": true },
+            { "text": "Catherine de Médicis" },
+            { "text": "Anne d'Autriche" },
+            { "text": "Joséphine de Beauharnais" }
+          ]
+        },
+        {
+          "text": "Quelle bataille de 1815 marque la défaite définitive de Napoléon ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Austerlitz" },
+            { "text": "Iéna" },
+            { "text": "Wagram" },
+            { "text": "Waterloo", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Qui fut le premier empereur romain ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Jules César" },
+            { "text": "Auguste", "isCorrect": true },
+            { "text": "Néron" },
+            { "text": "Caligula" }
+          ]
+        },
+        {
+          "text": "Quel traité, signé en 1919, a mis fin à la Première Guerre mondiale entre les Alliés et l'Allemagne ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Le traité de Paris" },
+            { "text": "Le traité de Rome" },
+            { "text": "Le traité de Versailles", "isCorrect": true },
+            { "text": "Le traité de Westphalie" }
+          ]
+        },
+        {
+          "text": "Qui a lancé l'appel du 18 juin 1940 depuis Londres ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Charles de Gaulle", "isCorrect": true },
+            { "text": "Philippe Leclerc de Hauteclocque" },
+            { "text": "Philippe Pétain" },
+            { "text": "Jean de Lattre de Tassigny" }
+          ]
+        },
+        {
+          "text": "Quelle ville a été la première frappée par une bombe atomique, en août 1945 ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Nagasaki" },
+            { "text": "Tokyo" },
+            { "text": "Osaka" },
+            { "text": "Hiroshima", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel roi des Francs fut baptisé à Reims par l'évêque Remi ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Charlemagne" },
+            { "text": "Clovis", "isCorrect": true },
+            { "text": "Pépin le Bref" },
+            { "text": "Dagobert" }
+          ]
+        },
+        {
+          "text": "Quel pharaon est célèbre pour son tombeau découvert presque intact en 1922 ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Ramsès II" },
+            { "text": "Khéops" },
+            { "text": "Toutânkhamon", "isCorrect": true },
+            { "text": "Akhenaton" }
+          ]
+        },
+        {
+          "text": "En quelle année François Ier a-t-il remporté la bataille de Marignan ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "1415" },
+            { "text": "1492" },
+            { "text": "1525" },
+            { "text": "1515", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "En quelle année le droit de vote a-t-il été accordé aux femmes en France ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "1936" },
+            { "text": "1944", "isCorrect": true },
+            { "text": "1958" },
+            { "text": "1968" }
+          ]
+        },
+        {
+          "text": "Quel édit, signé par Henri IV en 1598, accordait des droits religieux et civils aux protestants ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "L'édit de Nantes", "isCorrect": true },
+            { "text": "L'édit de Fontainebleau" },
+            { "text": "L'édit de Villers-Cotterêts" },
+            { "text": "L'édit de Moulins" }
+          ]
+        },
+        {
+          "text": "Quel empire était gouverné par Soliman le Magnifique ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "L'Empire perse" },
+            { "text": "L'Empire moghol" },
+            { "text": "L'Empire ottoman", "isCorrect": true },
+            { "text": "L'Empire byzantin" }
+          ]
+        },
+        {
+          "text": "En quelle année Constantinople a-t-elle été prise par les Ottomans ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "1389" },
+            { "text": "1492" },
+            { "text": "1517" },
+            { "text": "1453", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Qui fut le principal rédacteur de la Déclaration d'indépendance des États-Unis ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "George Washington" },
+            { "text": "Thomas Jefferson", "isCorrect": true },
+            { "text": "Benjamin Franklin" },
+            { "text": "John Adams" }
+          ]
+        },
+        {
+          "text": "Quelle bataille navale de 1805 vit la victoire de Nelson sur la flotte franco-espagnole ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "La bataille de Trafalgar", "isCorrect": true },
+            { "text": "La bataille d'Aboukir" },
+            { "text": "La bataille de Lépante" },
+            { "text": "La bataille de Midway" }
+          ]
+        },
+        {
+          "text": "Quel président de la République française a été assassiné à Lyon en 1894 ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Paul Doumer" },
+            { "text": "Félix Faure" },
+            { "text": "Sadi Carnot", "isCorrect": true },
+            { "text": "Jules Grévy" }
+          ]
+        },
+        {
+          "text": "En quelle année la Ve République a-t-elle été instaurée ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "1946" },
+            { "text": "1962" },
+            { "text": "1968" },
+            { "text": "1958", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel empire africain avait pour souverain Mansa Moussa, réputé pour son immense richesse ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "L'empire du Ghana" },
+            { "text": "L'empire du Mali", "isCorrect": true },
+            { "text": "L'empire songhaï" },
+            { "text": "Le royaume du Kongo" }
+          ]
+        },
+        {
+          "text": "Quel traité de 1494 partageait le Nouveau Monde entre l'Espagne et le Portugal ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Le traité d'Utrecht" },
+            { "text": "Le traité de Westphalie" },
+            { "text": "Le traité du Cateau-Cambrésis" },
+            { "text": "Le traité de Tordesillas", "isCorrect": true }
+          ]
+        }
+      ]
+    }
+  ]
+}
