@@ -1,10 +1,13 @@
 import { httpResource } from '@angular/common/http';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormControl, FormGroup, NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Observable, finalize } from 'rxjs';
 import { problemMessage } from '../../core/http/problem-message';
 import { SaveTheme, Theme } from './theme.model';
 import { ThemesApi, themesUrl } from './themes-api';
+
+/** Formulaire typé d'un thème : chaque champ est un FormControl<string>, jamais null. */
+type ThemeForm = FormGroup<{ name: FormControl<string>; icon: FormControl<string> }>;
 
 @Component({
   selector: 'app-theme-list',
@@ -24,6 +27,7 @@ export class ThemeList {
   protected readonly editingId = signal<number | null>(null);
   protected readonly saving = signal(false);
   protected readonly error = signal<string | null>(null);
+  protected readonly blockedDeletion = "Supprimez ou déplacez d'abord ses questions.";
 
   protected create(): void {
     this.save(this.createForm, (theme) => this.api.create(theme), () => this.createForm.reset());
@@ -51,7 +55,7 @@ export class ThemeList {
     this.run(this.api.delete(theme.id), () => undefined);
   }
 
-  private themeForm() {
+  private themeForm(): ThemeForm {
     return this.fb.group({
       name: ['', [Validators.required, Validators.maxLength(100)]],
       icon: ['', Validators.maxLength(50)],
@@ -59,7 +63,7 @@ export class ThemeList {
   }
 
   private save(
-    form: ReturnType<ThemeList['themeForm']>,
+    form: ThemeForm,
     send: (theme: SaveTheme) => Observable<unknown>,
     onSuccess: () => void,
   ): void {

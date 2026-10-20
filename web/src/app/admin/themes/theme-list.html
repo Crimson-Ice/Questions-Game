@@ -3,14 +3,27 @@
 <form [formGroup]="createForm" (ngSubmit)="create()" novalidate class="mb-6 flex flex-wrap items-start gap-2">
   <label class="flex flex-col gap-1">
     <span class="text-sm">Nom du thème</span>
-    <input formControlName="name" class="rounded border px-3 py-2" />
+    <input
+      formControlName="name"
+      aria-describedby="create-name-error"
+      [attr.aria-invalid]="createForm.controls.name.touched && createForm.controls.name.invalid"
+      class="rounded border px-3 py-2"
+    />
     @if (createForm.controls.name.touched && createForm.controls.name.invalid) {
-      <span class="text-sm text-red-600">Le nom est obligatoire (100 caractères au plus).</span>
+      <span id="create-name-error" class="text-sm text-red-600">Le nom est obligatoire (100 caractères au plus).</span>
     }
   </label>
   <label class="flex flex-col gap-1">
     <span class="text-sm">Icône (facultative)</span>
-    <input formControlName="icon" class="w-24 rounded border px-3 py-2" />
+    <input
+      formControlName="icon"
+      aria-describedby="create-icon-error"
+      [attr.aria-invalid]="createForm.controls.icon.invalid"
+      class="w-24 rounded border px-3 py-2"
+    />
+    @if (createForm.controls.icon.touched && createForm.controls.icon.invalid) {
+      <span id="create-icon-error" class="text-sm text-red-600">L'icône fait 50 caractères au plus.</span>
+    }
   </label>
   <button
     type="submit"
@@ -40,13 +53,29 @@
         <tr class="border-b" data-testid="theme-row">
           @if (editingId() === theme.id) {
             <td class="py-2" colspan="2">
-              <form [formGroup]="editForm" (ngSubmit)="saveEdit(theme.id)" novalidate class="flex gap-2">
-                <input formControlName="icon" aria-label="Icône" class="w-16 rounded border px-2 py-1" />
-                <input formControlName="name" aria-label="Nom du thème" class="rounded border px-2 py-1" />
+              <form [formGroup]="editForm" (ngSubmit)="saveEdit(theme.id)" novalidate class="flex flex-wrap gap-2">
+                <input
+                  formControlName="icon"
+                  aria-label="Icône"
+                  [attr.aria-invalid]="editForm.controls.icon.invalid"
+                  class="w-16 rounded border px-2 py-1"
+                />
+                <input
+                  formControlName="name"
+                  aria-label="Nom du thème"
+                  [attr.aria-invalid]="editForm.controls.name.touched && editForm.controls.name.invalid"
+                  class="rounded border px-2 py-1"
+                />
                 <button type="submit" [disabled]="saving()" class="rounded bg-blue-600 px-3 py-1 text-white">
                   Enregistrer
                 </button>
                 <button type="button" (click)="cancelEdit()" class="rounded border px-3 py-1">Annuler</button>
+                @if (editForm.controls.name.touched && editForm.controls.name.invalid) {
+                  <span class="w-full text-sm text-red-600">Le nom est obligatoire (100 caractères au plus).</span>
+                }
+                @if (editForm.controls.icon.touched && editForm.controls.icon.invalid) {
+                  <span class="w-full text-sm text-red-600">L'icône fait 50 caractères au plus.</span>
+                }
               </form>
             </td>
           } @else {
@@ -56,17 +85,29 @@
           <td class="py-2">{{ theme.questionCount }}</td>
           <td class="py-2 text-right">
             @if (editingId() !== theme.id) {
-              <button type="button" (click)="startEdit(theme)" class="mr-2 rounded border px-3 py-1">Renommer</button>
+              <button
+                type="button"
+                (click)="startEdit(theme)"
+                [attr.aria-label]="'Renommer le thème ' + theme.name"
+                class="mr-2 rounded border px-3 py-1"
+              >
+                Renommer
+              </button>
             }
             <button
               type="button"
               (click)="remove(theme)"
               [disabled]="theme.questionCount > 0 || saving()"
-              [title]="theme.questionCount > 0 ? 'Supprimez ou déplacez d\'abord ses questions.' : ''"
+              [title]="theme.questionCount > 0 ? blockedDeletion : ''"
+              [attr.aria-label]="'Supprimer le thème ' + theme.name"
               class="rounded border px-3 py-1 text-red-700 disabled:opacity-40"
             >
               Supprimer
             </button>
+            @if (theme.questionCount > 0) {
+              <!-- Un bouton désactivé ne reçoit pas le focus : l'explication est aussi donnée en texte. -->
+              <span class="sr-only">{{ blockedDeletion }}</span>
+            }
           </td>
         </tr>
       } @empty {

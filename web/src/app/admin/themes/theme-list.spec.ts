@@ -7,6 +7,24 @@ import { Theme } from './theme.model';
 const cinema: Theme = { id: 1, name: 'Cinéma', icon: '🎬', questionCount: 30 };
 const empty: Theme = { id: 2, name: 'Vide', icon: null, questionCount: 0 };
 
+describe('ThemeList when the list cannot be loaded', () => {
+  it('shows a loading error', async () => {
+    TestBed.configureTestingModule({
+      imports: [ThemeList],
+      providers: [provideHttpClient(), provideHttpClientTesting()],
+    });
+    const fixture = TestBed.createComponent(ThemeList);
+    TestBed.tick();
+
+    TestBed.inject(HttpTestingController)
+      .expectOne('/api/admin/themes')
+      .flush(null, { status: 500, statusText: 'Server Error' });
+    await fixture.whenStable();
+
+    expect((fixture.nativeElement as HTMLElement).textContent).toContain('Impossible de charger les thèmes.');
+  });
+});
+
 describe('ThemeList', () => {
   let fixture: ComponentFixture<ThemeList>;
   let backend: HttpTestingController;
@@ -23,7 +41,10 @@ describe('ThemeList', () => {
     await respondWithThemes([cinema, empty]);
   });
 
-  afterEach(() => backend.verify());
+  afterEach(() => {
+    backend.verify();
+    vi.restoreAllMocks();
+  });
 
   /**
    * Répond à la requête de chargement (ou de rechargement) de la liste. TestBed.tick() exécute
@@ -123,6 +144,57 @@ describe('ThemeList', () => {
     await respondWithThemes([{ ...cinema, name: 'Films' }, empty]);
     expect(rows()[0].textContent).toContain('Films');
     expect(rows()[0].querySelector('input')).toBeNull();
+  });
+
+  it('shows why an add is refused when the icon is too long', async () => {
+    const [name, icon] = Array.from(element.querySelectorAll<HTMLInputElement>('form input'));
+    type(name, 'Sport');
+    type(icon, 'x'.repeat(51));
+    element.querySelector('form')!.dispatchEvent(new Event('submit'));
+    await fixture.whenStable();
+
+    backend.expectNone({ method: 'POST', url: '/api/admin/themes' });
+    expect(element.textContent).toContain("L'icône fait 50 caractères au plus.");
+  });
+
+  it('refuses an empty name when renaming, with a message', async () => {
+    button(rows()[0], 'Renommer').click();
+    await fixture.whenStable();
+
+    type(rows()[0].querySelector<HTMLInputElement>('input[aria-label="Nom du thème"]')!, '');
+    rows()[0].querySelector('form')!.dispatchEvent(new Event('submit'));
+    await fixture.whenStable();
+
+    backend.expectNone({ method: 'PUT', url: '/api/admin/themes/1' });
+    expect(rows()[0].textContent).toContain('Le nom est obligatoire');
+  });
+
+  it('cancels a rename without calling the API', async () => {
+    button(rows()[0], 'Renommer').click();
+    await fixture.whenStable();
+
+    button(rows()[0], 'Annuler').click();
+    await fixture.whenStable();
+
+    expect(rows()[0].querySelector('input')).toBeNull();
+    expect(rows()[0].textContent).toContain('Cinéma');
+  });
+
+  it('shows the API message when a deletion fails', async () => {
+    vi.spyOn(window, 'confirm').mockReturnValue(true);
+
+    button(rows()[1], 'Supprimer').click();
+    backend
+      .expectOne({ method: 'DELETE', url: '/api/admin/themes/2' })
+      .flush({ title: 'Ce thème contient des questions.' }, { status: 409, statusText: 'Conflict' });
+    await fixture.whenStable();
+
+    expect(element.querySelector('[role=alert]')?.textContent).toContain('Ce thème contient des questions.');
+  });
+
+  it('gives each row action an accessible name', () => {
+    expect(button(rows()[0], 'Supprimer').getAttribute('aria-label')).toBe('Supprimer le thème Cinéma');
+    expect(button(rows()[0], 'Renommer').getAttribute('aria-label')).toBe('Renommer le thème Cinéma');
   });
 
   it('deletes an empty theme after confirmation', async () => {
