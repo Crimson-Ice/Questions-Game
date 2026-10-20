@@ -79,7 +79,7 @@
           "difficulty": "Easy",
           "answers": [
             { "text": "Isaac Newton" },
-            { "text": "Galilée" },
+            { "text": "Max Planck" },
             { "text": "Niels Bohr" },
             { "text": "Albert Einstein", "isCorrect": true }
           ]
@@ -106,7 +106,7 @@
         },
         {
           "text": "Combien d'os compte le squelette d'un être humain adulte ?",
-          "difficulty": "Medium",
+          "difficulty": "Hard",
           "answers": [
             { "text": "186" },
             { "text": "226" },
@@ -165,7 +165,7 @@
           ]
         },
         {
-          "text": "Quelle est la planète la plus chaude du système solaire ?",
+          "text": "Quelle est la planète la plus chaude du système solaire, en surface ?",
           "difficulty": "Medium",
           "answers": [
             { "text": "Mercure" },
@@ -185,8 +185,8 @@
           ]
         },
         {
-          "text": "Combien de chromosomes contient une cellule humaine non reproductrice ?",
-          "difficulty": "Medium",
+          "text": "Combien de chromosomes contient une cellule humaine, hors gamètes ?",
+          "difficulty": "Hard",
           "answers": [
             { "text": "23" },
             { "text": "44" },
@@ -226,7 +226,7 @@
         },
         {
           "text": "Quelle particule a été découverte au CERN en 2012 ?",
-          "difficulty": "Hard",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Le neutrino" },
             { "text": "Le quark top" },
@@ -245,7 +245,7 @@
           ]
         },
         {
-          "text": "Quel est le seul métal liquide à température ambiante ?",
+          "text": "Quel métal est liquide à température ambiante ?",
           "difficulty": "Hard",
           "answers": [
             { "text": "Le plomb" },
@@ -265,7 +265,7 @@
           ]
         },
         {
-          "text": "Quelle est, environ, la demi-vie du carbone 14, utilisé pour dater les fossiles récents ?",
+          "text": "Quelle est, environ, la demi-vie du carbone 14, utilisé pour dater des restes organiques (os, bois…) ?",
           "difficulty": "Hard",
           "answers": [
             { "text": "573 ans" },
@@ -296,7 +296,7 @@
         },
         {
           "text": "Quel est le pH d'une solution neutre à 25 °C ?",
-          "difficulty": "Hard",
+          "difficulty": "Medium",
           "answers": [
             { "text": "0" },
             { "text": "1" },
