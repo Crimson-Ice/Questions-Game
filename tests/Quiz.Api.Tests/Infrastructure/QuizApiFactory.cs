@@ -3,6 +3,7 @@ using System.Net.Http.Json;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 using Quiz.Api.Auth;
 using Quiz.Data;
 using Testcontainers.PostgreSql;
@@ -53,6 +54,23 @@ public sealed class QuizApiFactory : WebApplicationFactory<Program>, IAsyncLifet
             .Options;
 
         return new QuizDbContext(options);
+    }
+
+    /// <summary>
+    /// Crée une base neuve et migrée dans le même conteneur, pour les tests qui ont besoin
+    /// d'une base sans aucune donnée (la base principale est partagée entre les tests).
+    /// </summary>
+    public async Task<QuizDbContext> CreateEmptyDatabaseAsync()
+    {
+        var connectionString = new NpgsqlConnectionStringBuilder(_database.GetConnectionString())
+        {
+            Database = $"quiz_{Guid.NewGuid():N}",
+        }.ConnectionString;
+        var options = new DbContextOptionsBuilder<QuizDbContext>().UseNpgsql(connectionString).Options;
+
+        var db = new QuizDbContext(options);
+        await db.Database.MigrateAsync();
+        return db;
     }
 
     protected override void ConfigureWebHost(IWebHostBuilder builder)

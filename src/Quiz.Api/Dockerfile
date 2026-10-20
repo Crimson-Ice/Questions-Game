@@ -19,6 +19,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
 WORKDIR /app
 COPY --from=build /app .
 
+# Banque initiale, chargée au démarrage si la base ne contient aucune question (Seed:Directory).
+COPY seed/ seed/
+
 # Utilisateur non root fourni par l'image Microsoft.
 USER $APP_UID
 EXPOSE 8080
