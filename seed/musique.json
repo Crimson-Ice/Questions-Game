@@ -36,7 +36,7 @@
         },
         {
           "text": "De quel pays le groupe ABBA est-il originaire ?",
-          "difficulty": "Easy",
+          "difficulty": "Medium",
           "answers": [
             { "text": "La Norvège" },
             { "text": "Le Danemark" },
@@ -55,7 +55,7 @@
           ]
         },
         {
-          "text": "Quelle chanteuse a créé « La Vie en rose » ?",
+          "text": "Quelle chanteuse a écrit les paroles de « La Vie en rose » et l'a rendue célèbre ?",
           "difficulty": "Easy",
           "answers": [
             { "text": "Édith Piaf", "isCorrect": true },
@@ -85,13 +85,13 @@
           ]
         },
         {
-          "text": "Quel chanteur de Queen interprétait « Bohemian Rhapsody » ?",
+          "text": "Qui était le chanteur du groupe Queen ?",
           "difficulty": "Easy",
           "answers": [
-            { "text": "Brian May" },
+            { "text": "Robert Plant" },
             { "text": "Freddie Mercury", "isCorrect": true },
-            { "text": "David Bowie" },
-            { "text": "Elton John" }
+            { "text": "Mick Jagger" },
+            { "text": "Roger Daltrey" }
           ]
         },
         {
@@ -106,7 +106,7 @@
         },
         {
           "text": "Combien de touches compte un piano standard ?",
-          "difficulty": "Medium",
+          "difficulty": "Hard",
           "answers": [
             { "text": "76" },
             { "text": "92" },
@@ -146,7 +146,7 @@
         },
         {
           "text": "Quel duo français était formé de Thomas Bangalter et Guy-Manuel de Homem-Christo ?",
-          "difficulty": "Medium",
+          "difficulty": "Hard",
           "answers": [
             { "text": "Justice" },
             { "text": "Air" },
@@ -156,7 +156,7 @@
         },
         {
           "text": "Combien de lignes compte une portée musicale ?",
-          "difficulty": "Medium",
+          "difficulty": "Easy",
           "answers": [
             { "text": "5", "isCorrect": true },
             { "text": "4" },
@@ -165,7 +165,7 @@
           ]
         },
         {
-          "text": "Quel rappeur américain a sorti l'album « The Marshall Mathers LP » ?",
+          "text": "De quel rappeur l'album « The Marshall Mathers LP » est-il l'œuvre ?",
           "difficulty": "Medium",
           "answers": [
             { "text": "Jay-Z" },
@@ -196,7 +196,7 @@
         },
         {
           "text": "Quel groupe a sorti l'album « The Dark Side of the Moon » en 1973 ?",
-          "difficulty": "Medium",
+          "difficulty": "Hard",
           "answers": [
             { "text": "Pink Floyd", "isCorrect": true },
             { "text": "Led Zeppelin" },
@@ -206,7 +206,7 @@
         },
         {
           "text": "Quel compositeur a écrit « Les Quatre Saisons » ?",
-          "difficulty": "Hard",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Jean-Sébastien Bach" },
             { "text": "Antonio Vivaldi", "isCorrect": true },
@@ -226,7 +226,7 @@
         },
         {
           "text": "Combien de cordes a un violon ?",
-          "difficulty": "Hard",
+          "difficulty": "Medium",
           "answers": [
             { "text": "3" },
             { "text": "5" },
@@ -246,7 +246,7 @@
         },
         {
           "text": "Quel festival s'est tenu en août 1969 près de Bethel, dans l'État de New York ?",
-          "difficulty": "Hard",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Coachella" },
             { "text": "Glastonbury" },
