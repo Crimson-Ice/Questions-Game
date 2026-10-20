@@ -3,7 +3,8 @@ using FluentValidation;
 namespace Quiz.Api.Validation;
 
 /// <summary>
-/// Filtre d'endpoint : valide le corps de requête de type <typeparamref name="TRequest"/> avec
+/// Filtre d'endpoint : valide l'argument de type <typeparamref name="TRequest"/> (corps JSON, ou paramètres
+/// d'URL regroupés par <c>[AsParameters]</c>) avec
 /// FluentValidation, et répond 400 (ProblemDetails de validation) avant d'appeler le handler.
 /// </summary>
 public sealed class ValidationFilter<TRequest>(IValidator<TRequest> validator) : IEndpointFilter
