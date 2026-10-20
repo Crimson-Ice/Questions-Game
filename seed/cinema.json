@@ -56,7 +56,7 @@
         },
         {
           "text": "Quel studio a produit « Toy Story » (1995), premier long métrage entièrement en images de synthèse ?",
-          "difficulty": "Easy",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Pixar", "isCorrect": true },
             { "text": "DreamWorks" },
@@ -126,7 +126,7 @@
         },
         {
           "text": "Dans « Matrix », quelle pilule Neo avale-t-il ?",
-          "difficulty": "Medium",
+          "difficulty": "Easy",
           "answers": [
             { "text": "La bleue" },
             { "text": "La verte" },
@@ -156,7 +156,7 @@
         },
         {
           "text": "En quelle année est sorti le premier film « Star Wars » (Un nouvel espoir) ?",
-          "difficulty": "Medium",
+          "difficulty": "Hard",
           "answers": [
             { "text": "1974" },
             { "text": "1977", "isCorrect": true },
@@ -165,7 +165,7 @@
           ]
         },
         {
-          "text": "Quel film de Hayao Miyazaki a remporté l'Oscar du meilleur film d'animation en 2003 ?",
+          "text": "Quel film de Hayao Miyazaki a remporté l'Oscar du meilleur film d'animation lors de la cérémonie de 2003 ?",
           "difficulty": "Medium",
           "answers": [
             { "text": "Mon voisin Totoro" },
@@ -175,7 +175,7 @@
           ]
         },
         {
-          "text": "Quel film français de 2011, avec Omar Sy et François Cluzet, a dépassé les 19 millions d'entrées en France ?",
+          "text": "Quel film français de 2011 réunit Omar Sy et François Cluzet ?",
           "difficulty": "Medium",
           "answers": [
             { "text": "Intouchables", "isCorrect": true },
@@ -196,7 +196,7 @@
         },
         {
           "text": "Dans « Retour vers le futur », quelle vitesse la DeLorean doit-elle atteindre pour voyager dans le temps ?",
-          "difficulty": "Medium",
+          "difficulty": "Hard",
           "answers": [
             { "text": "77 miles par heure" },
             { "text": "88 miles par heure", "isCorrect": true },
@@ -206,7 +206,7 @@
         },
         {
           "text": "Quel est le premier long métrage d'animation des studios Disney (1937) ?",
-          "difficulty": "Hard",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Pinocchio" },
             { "text": "Fantasia" },
@@ -216,7 +216,7 @@
         },
         {
           "text": "Quels frères ont organisé la première projection publique payante du Cinématographe, à Paris en 1895 ?",
-          "difficulty": "Hard",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Les frères Lumière", "isCorrect": true },
             { "text": "Les frères Pathé" },

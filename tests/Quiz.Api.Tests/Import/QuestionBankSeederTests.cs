@@ -59,6 +59,19 @@ public sealed class QuestionBankSeederTests(QuizApiFactory factory) : IDisposabl
         Assert.False(await db.Themes.AnyAsync());
     }
 
+    [Theory]
+    [InlineData("{ \"themes\": [ ")]
+    [InlineData("{ \"themes\": null }")]
+    public async Task Seed_WithMalformedFile_ThrowsWithFileNameAsync(string content)
+    {
+        await using var db = await factory.CreateEmptyDatabaseAsync();
+        WriteFile("casse.json", content);
+
+        var exception = await Assert.ThrowsAsync<InvalidOperationException>(() => CreateSeeder(db).SeedAsync(_directory));
+
+        Assert.Contains("casse.json", exception.Message);
+    }
+
     [Fact]
     public async Task Seed_WithMissingDirectory_ThrowsAsync()
     {

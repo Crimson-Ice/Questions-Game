@@ -183,4 +183,4 @@ Le risque principal est de laisser l'agent IA écrire du code .NET ou Angular no
 - [ ] Nombre maximum de joueurs par session
 - [x] Choix PostgreSQL ou SQL Server → **PostgreSQL** (image Docker légère, en place depuis le jalon 1)
 - [ ] Hébergement de la démo en ligne (VPS ou Azure)
-- [x] Liste des thèmes de la banque initiale → **Cinéma, Géographie, Histoire, Sciences, Musique, Sport** (questions écrites par Claude, relues par le développeur avant import)
+- [x] Liste des thèmes de la banque initiale → **Cinéma, Géographie, Histoire, Sciences, Musique, Sport** (questions écrites par Claude, relues par le développeur avant import ; livrées un thème par PR, Cinéma en premier)

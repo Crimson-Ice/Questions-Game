@@ -5,8 +5,8 @@ using Quiz.Data.Entities;
 namespace Quiz.Api.Import;
 
 /// <summary>
-/// Importe une banque de questions déjà validée. Partagé par l'endpoint d'import et, plus tard,
-/// par le chargement de la banque initiale au démarrage.
+/// Importe une banque de questions déjà validée. Partagé par l'endpoint d'import et par
+/// le chargement de la banque initiale au démarrage (<see cref="QuestionBankSeeder"/>).
 /// </summary>
 public sealed class QuestionBankImporter(QuizDbContext db, TimeProvider timeProvider)
 {

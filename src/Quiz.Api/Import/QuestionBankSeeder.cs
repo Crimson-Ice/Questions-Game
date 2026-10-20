@@ -54,9 +54,22 @@ public sealed class QuestionBankSeeder(
         foreach (var path in Directory.GetFiles(directory, "*.json").Order(StringComparer.Ordinal))
         {
             await using var stream = File.OpenRead(path);
-            var file = await JsonSerializer.DeserializeAsync<ImportRequest>(
-                stream, jsonOptions.Value.SerializerOptions, cancellationToken)
-                ?? throw new InvalidOperationException($"Fichier de banque vide : {path}");
+            ImportRequest? file;
+            try
+            {
+                file = await JsonSerializer.DeserializeAsync<ImportRequest>(
+                    stream, jsonOptions.Value.SerializerOptions, cancellationToken);
+            }
+            catch (JsonException exception)
+            {
+                throw new InvalidOperationException($"Fichier de banque mal formé : {path} ({exception.Message})", exception);
+            }
+
+            if (file?.Themes is null)
+            {
+                throw new InvalidOperationException($"Fichier de banque sans liste de thèmes : {path}");
+            }
+
             themes.AddRange(file.Themes);
         }
 
