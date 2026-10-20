@@ -1,6 +1,8 @@
+using System.Text.Json.Serialization;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Quiz.Api.Auth;
+using Quiz.Api.Questions;
 using Quiz.Api.Themes;
 using Quiz.Data;
 
@@ -8,6 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<QuizDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Quiz")));
+
+// Les énumérations (la difficulté) circulent en texte dans le JSON : "Easy" plutôt que 0.
+builder.Services.ConfigureHttpJsonOptions(options =>
+    options.SerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 
 builder.Services.AddProblemDetails();
 builder.Services.AddValidatorsFromAssemblyContaining<Program>();
@@ -36,5 +42,6 @@ app.UseAuthorization();
 app.MapHealthChecks("/health");
 app.MapAuthEndpoints();
 app.MapThemeEndpoints();
+app.MapQuestionEndpoints();
 
 app.Run();
