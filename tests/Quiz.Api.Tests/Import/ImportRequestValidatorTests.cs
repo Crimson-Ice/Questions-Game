@@ -60,6 +60,15 @@ public class ImportRequestValidatorTests
     }
 
     [Fact]
+    public void Validate_WithTooLongThemeNameOrIcon_IsInvalid()
+    {
+        var result = _validator.Validate(File(Theme(new string('a', 101)) with { Icon = new string('b', 51) }));
+
+        Assert.Contains(result.Errors, e => e.PropertyName == "Themes[0].Name");
+        Assert.Contains(result.Errors, e => e.PropertyName == "Themes[0].Icon");
+    }
+
+    [Fact]
     public void Validate_WithNullQuestionList_IsInvalid()
     {
         var result = _validator.Validate(File(Theme("Sport") with { Questions = null! }));
