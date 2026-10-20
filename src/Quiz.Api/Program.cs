@@ -23,6 +23,7 @@ builder.Services.AddProblemDetails();
 builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 builder.Services.AddAdminAuthentication(builder.Configuration);
 builder.Services.AddScoped<QuestionBankImporter>();
+builder.Services.AddScoped<QuestionBankSeeder>();
 builder.Services.AddHealthChecks();
 
 var app = builder.Build();
@@ -36,6 +37,14 @@ await using (var scope = app.Services.CreateAsyncScope())
     }
 
     await scope.ServiceProvider.GetRequiredService<AdminAccountSeeder>().SeedAsync();
+
+    // Chemin relatif au dossier du projet (dotnet run) ou absolu (Docker).
+    var seedDirectory = app.Configuration["Seed:Directory"];
+    if (!string.IsNullOrWhiteSpace(seedDirectory))
+    {
+        var path = Path.GetFullPath(seedDirectory, app.Environment.ContentRootPath);
+        await scope.ServiceProvider.GetRequiredService<QuestionBankSeeder>().SeedAsync(path);
+    }
 }
 
 app.UseExceptionHandler();

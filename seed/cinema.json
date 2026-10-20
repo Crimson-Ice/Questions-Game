@@ -1,0 +1,310 @@
+{
+  "themes": [
+    {
+      "name": "Cinéma",
+      "icon": "🎬",
+      "questions": [
+        {
+          "text": "Qui a réalisé « Titanic » (1997) ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Steven Spielberg" },
+            { "text": "James Cameron", "isCorrect": true },
+            { "text": "Ridley Scott" },
+            { "text": "Martin Scorsese" }
+          ]
+        },
+        {
+          "text": "Dans « Le Roi Lion », comment s'appelle le père de Simba ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Mufasa", "isCorrect": true },
+            { "text": "Scar" },
+            { "text": "Rafiki" },
+            { "text": "Zazu" }
+          ]
+        },
+        {
+          "text": "Quel acteur incarne Jack Sparrow dans « Pirates des Caraïbes » ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Orlando Bloom" },
+            { "text": "Brad Pitt" },
+            { "text": "Johnny Depp", "isCorrect": true },
+            { "text": "Keanu Reeves" }
+          ]
+        },
+        {
+          "text": "Quelle récompense est remise au meilleur film du Festival de Cannes ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "L'Ours d'or" },
+            { "text": "Le Lion d'or" },
+            { "text": "Le César" },
+            { "text": "La Palme d'or", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Dans quelle maison de Poudlard Harry Potter est-il envoyé ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Serpentard" },
+            { "text": "Gryffondor", "isCorrect": true },
+            { "text": "Poufsouffle" },
+            { "text": "Serdaigle" }
+          ]
+        },
+        {
+          "text": "Quel studio a produit « Toy Story » (1995), premier long métrage entièrement en images de synthèse ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Pixar", "isCorrect": true },
+            { "text": "DreamWorks" },
+            { "text": "Illumination" },
+            { "text": "Blue Sky" }
+          ]
+        },
+        {
+          "text": "Dans « Star Wars », qui est le père de Luke Skywalker ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Obi-Wan Kenobi" },
+            { "text": "Yoda" },
+            { "text": "Dark Vador", "isCorrect": true },
+            { "text": "L'empereur Palpatine" }
+          ]
+        },
+        {
+          "text": "Quel film de 1993 met en scène des dinosaures recréés à partir d'ADN ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "King Kong" },
+            { "text": "Godzilla" },
+            { "text": "Dinosaure" },
+            { "text": "Jurassic Park", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel acteur joue le rôle de Forrest Gump ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Tom Hanks", "isCorrect": true },
+            { "text": "Tom Cruise" },
+            { "text": "Robin Williams" },
+            { "text": "Kevin Costner" }
+          ]
+        },
+        {
+          "text": "Comment s'appelle le petit robot de Pixar resté seul pour nettoyer la Terre ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "EVE" },
+            { "text": "WALL-E", "isCorrect": true },
+            { "text": "R2-D2" },
+            { "text": "Baymax" }
+          ]
+        },
+        {
+          "text": "Quel film a remporté l'Oscar du meilleur film lors de la cérémonie de 2020 ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "1917" },
+            { "text": "Joker" },
+            { "text": "Parasite", "isCorrect": true },
+            { "text": "Once Upon a Time… in Hollywood" }
+          ]
+        },
+        {
+          "text": "Qui a réalisé « Le Fabuleux Destin d'Amélie Poulain » ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Jean-Pierre Jeunet", "isCorrect": true },
+            { "text": "Luc Besson" },
+            { "text": "Jacques Audiard" },
+            { "text": "Michel Gondry" }
+          ]
+        },
+        {
+          "text": "Dans « Matrix », quelle pilule Neo avale-t-il ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "La bleue" },
+            { "text": "La verte" },
+            { "text": "La rouge", "isCorrect": true },
+            { "text": "La jaune" }
+          ]
+        },
+        {
+          "text": "Quel acteur français a remporté l'Oscar du meilleur acteur pour « The Artist » ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Omar Sy" },
+            { "text": "Vincent Cassel" },
+            { "text": "Gérard Depardieu" },
+            { "text": "Jean Dujardin", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel réalisateur a signé « Pulp Fiction » ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Martin Scorsese" },
+            { "text": "Quentin Tarantino", "isCorrect": true },
+            { "text": "Guy Ritchie" },
+            { "text": "David Fincher" }
+          ]
+        },
+        {
+          "text": "En quelle année est sorti le premier film « Star Wars » (Un nouvel espoir) ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "1974" },
+            { "text": "1977", "isCorrect": true },
+            { "text": "1980" },
+            { "text": "1983" }
+          ]
+        },
+        {
+          "text": "Quel film de Hayao Miyazaki a remporté l'Oscar du meilleur film d'animation lors de la cérémonie de 2003 ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Mon voisin Totoro" },
+            { "text": "Princesse Mononoké" },
+            { "text": "Le Château ambulant" },
+            { "text": "Le Voyage de Chihiro", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel film français de 2011 réunit Omar Sy et François Cluzet ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Intouchables", "isCorrect": true },
+            { "text": "Bienvenue chez les Ch'tis" },
+            { "text": "Les Visiteurs" },
+            { "text": "Qu'est-ce qu'on a fait au Bon Dieu ?" }
+          ]
+        },
+        {
+          "text": "Quelle actrice joue Hermione Granger dans la saga « Harry Potter » ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Emma Stone" },
+            { "text": "Keira Knightley" },
+            { "text": "Emma Watson", "isCorrect": true },
+            { "text": "Natalie Portman" }
+          ]
+        },
+        {
+          "text": "Dans « Retour vers le futur », quelle vitesse la DeLorean doit-elle atteindre pour voyager dans le temps ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "77 miles par heure" },
+            { "text": "88 miles par heure", "isCorrect": true },
+            { "text": "100 miles par heure" },
+            { "text": "120 miles par heure" }
+          ]
+        },
+        {
+          "text": "Quel est le premier long métrage d'animation des studios Disney (1937) ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Pinocchio" },
+            { "text": "Fantasia" },
+            { "text": "Blanche-Neige et les Sept Nains", "isCorrect": true },
+            { "text": "Cendrillon" }
+          ]
+        },
+        {
+          "text": "Quels frères ont organisé la première projection publique payante du Cinématographe, à Paris en 1895 ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Les frères Lumière", "isCorrect": true },
+            { "text": "Les frères Pathé" },
+            { "text": "Les frères Warner" },
+            { "text": "Les frères Coen" }
+          ]
+        },
+        {
+          "text": "Quel film détient, avec « Titanic » et « Le Retour du roi », le record de 11 Oscars remportés ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Autant en emporte le vent" },
+            { "text": "West Side Story" },
+            { "text": "Lawrence d'Arabie" },
+            { "text": "Ben-Hur", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Qui a réalisé « Le Voyage dans la Lune » (1902) ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Louis Lumière" },
+            { "text": "Georges Méliès", "isCorrect": true },
+            { "text": "Charles Pathé" },
+            { "text": "Abel Gance" }
+          ]
+        },
+        {
+          "text": "Quel film de 1927 est souvent présenté comme le premier long métrage parlant ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Metropolis" },
+            { "text": "Les Lumières de la ville" },
+            { "text": "Le Chanteur de jazz", "isCorrect": true },
+            { "text": "Chantons sous la pluie" }
+          ]
+        },
+        {
+          "text": "Quel réalisateur a reçu la Palme d'or pour « Le Ruban blanc » puis pour « Amour » ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Ken Loach" },
+            { "text": "Lars von Trier" },
+            { "text": "Jacques Audiard" },
+            { "text": "Michael Haneke", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Dans « 2001 : l'Odyssée de l'espace », comment s'appelle l'ordinateur de bord ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "HAL 9000", "isCorrect": true },
+            { "text": "Skynet" },
+            { "text": "Mother" },
+            { "text": "Jarvis" }
+          ]
+        },
+        {
+          "text": "Quelle actrice détient le record de quatre Oscars de la meilleure actrice ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Meryl Streep" },
+            { "text": "Katharine Hepburn", "isCorrect": true },
+            { "text": "Ingrid Bergman" },
+            { "text": "Frances McDormand" }
+          ]
+        },
+        {
+          "text": "Quel cinéaste a réalisé « Les Quatre Cents Coups » (1959), film emblématique de la Nouvelle Vague ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Jean-Luc Godard" },
+            { "text": "Claude Chabrol" },
+            { "text": "François Truffaut", "isCorrect": true },
+            { "text": "Éric Rohmer" }
+          ]
+        },
+        {
+          "text": "Quel compositeur a écrit la musique de « Star Wars », des « Dents de la mer » et d'« Indiana Jones » ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Hans Zimmer" },
+            { "text": "Ennio Morricone" },
+            { "text": "Howard Shore" },
+            { "text": "John Williams", "isCorrect": true }
+          ]
+        }
+      ]
+    }
+  ]
+}

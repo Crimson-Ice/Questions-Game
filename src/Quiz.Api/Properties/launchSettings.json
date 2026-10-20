@@ -8,7 +8,8 @@
       "applicationUrl": "http://localhost:5145",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "Database__ApplyMigrationsOnStartup": "true"
+        "Database__ApplyMigrationsOnStartup": "true",
+        "Seed__Directory": "../../seed"
       }
     },
     "https": {
