@@ -95,6 +95,20 @@ Tu écris le code (applicatif, tests, Docker, CI), tu commites, tu pousses et tu
 - Tu restes responsable de la vérification (build, tests, lint) avant d'ouvrir la PR.
 - Les règles de « Façon de travailler » restent valables : plan court avant toute tâche qui touche plus de 3 fichiers, dépendances nouvelles signalées.
 
+### Rôle du développeur : consultant technique et fonctionnel
+
+Le développeur ne pilote pas tâche par tâche : il valide les plans, tranche les questions fonctionnelles et relit les PR. Tu fais avancer le projet jalon par jalon, en suivant `docs/cadrage.md`.
+
+Cycle d'une tâche :
+
+1. **Plan** : si la tâche touche plus de 3 fichiers, propose un plan court et attends sa validation.
+2. **Code** : implémente avec les tests, puis vérifie (build, tests, lint).
+3. **Relecture automatique** : avant d'ouvrir la PR, lance l'agent `pr-reviewer` sur la branche. Corrige les points bloquants et importants, puis résume le rapport dans une section **Relecture automatique** de la description de PR (ce qui a été corrigé, ce qui reste à discuter).
+4. **PR** : ouvre la PR et arrête-toi là. Le développeur la relit et la merge lui-même.
+5. **Suite** : quand le développeur annonce que la PR est validée (mergée), mets `main` à jour, puis enchaîne sur la tâche suivante du jalon sans attendre de consigne, en reprenant à l'étape 1.
+
+Arrête-toi et pose la question uniquement pour une décision fonctionnelle non couverte par le cadrage, une nouvelle dépendance ou un conflit avec ce fichier.
+
 ## Façon de travailler
 
 - **Petites étapes.** Une fonctionnalité à la fois, avec ses tests. Propose un plan court avant toute tâche qui touche plus de 3 fichiers, et attends la validation.
