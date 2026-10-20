@@ -34,7 +34,6 @@ public static class AuthServiceCollectionExtensions
             });
         services.AddAuthorization();
 
-        services.AddSingleton(TimeProvider.System);
         services.AddSingleton<AccessTokenIssuer>();
         services.AddSingleton<IPasswordHasher<AdminUser>, PasswordHasher<AdminUser>>();
         services.AddScoped<AdminAccountSeeder>();
