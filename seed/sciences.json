@@ -1,0 +1,310 @@
+{
+  "themes": [
+    {
+      "name": "Sciences",
+      "icon": "🔬",
+      "questions": [
+        {
+          "text": "Quelle planète est la plus proche du Soleil ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Vénus" },
+            { "text": "Mercure", "isCorrect": true },
+            { "text": "Mars" },
+            { "text": "La Terre" }
+          ]
+        },
+        {
+          "text": "Quelle est la formule chimique de l'eau ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "H₂O", "isCorrect": true },
+            { "text": "CO₂" },
+            { "text": "O₂" },
+            { "text": "H₂O₂" }
+          ]
+        },
+        {
+          "text": "Combien de pattes a une araignée ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "6" },
+            { "text": "10" },
+            { "text": "8", "isCorrect": true },
+            { "text": "12" }
+          ]
+        },
+        {
+          "text": "Quel gaz les plantes absorbent-elles pour réaliser la photosynthèse ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "L'oxygène" },
+            { "text": "L'azote" },
+            { "text": "L'hélium" },
+            { "text": "Le dioxyde de carbone", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quelle est la plus grosse planète du système solaire ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Saturne" },
+            { "text": "Jupiter", "isCorrect": true },
+            { "text": "Neptune" },
+            { "text": "Uranus" }
+          ]
+        },
+        {
+          "text": "À quelle température l'eau bout-elle au niveau de la mer ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "100 °C", "isCorrect": true },
+            { "text": "80 °C" },
+            { "text": "90 °C" },
+            { "text": "120 °C" }
+          ]
+        },
+        {
+          "text": "Quel organe pompe le sang dans le corps humain ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Le foie" },
+            { "text": "Les poumons" },
+            { "text": "Le cœur", "isCorrect": true },
+            { "text": "Les reins" }
+          ]
+        },
+        {
+          "text": "Quel physicien a formulé la théorie de la relativité ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Isaac Newton" },
+            { "text": "Galilée" },
+            { "text": "Niels Bohr" },
+            { "text": "Albert Einstein", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quelle planète est surnommée « la planète rouge » ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Mars", "isCorrect": true },
+            { "text": "Vénus" },
+            { "text": "Jupiter" },
+            { "text": "Mercure" }
+          ]
+        },
+        {
+          "text": "Quel est le plus grand animal vivant sur Terre ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "L'éléphant d'Afrique" },
+            { "text": "La baleine bleue", "isCorrect": true },
+            { "text": "Le cachalot" },
+            { "text": "La girafe" }
+          ]
+        },
+        {
+          "text": "Combien d'os compte le squelette d'un être humain adulte ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "186" },
+            { "text": "226" },
+            { "text": "206", "isCorrect": true },
+            { "text": "312" }
+          ]
+        },
+        {
+          "text": "Quel est le symbole chimique de l'or ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Au", "isCorrect": true },
+            { "text": "Or" },
+            { "text": "Ag" },
+            { "text": "Go" }
+          ]
+        },
+        {
+          "text": "Quelle est, environ, la vitesse de la lumière dans le vide ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "300 km/s" },
+            { "text": "30 000 km/s" },
+            { "text": "3 000 000 km/s" },
+            { "text": "300 000 km/s", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quelle scientifique a reçu deux prix Nobel, en physique puis en chimie ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Rosalind Franklin" },
+            { "text": "Marie Curie", "isCorrect": true },
+            { "text": "Irène Joliot-Curie" },
+            { "text": "Lise Meitner" }
+          ]
+        },
+        {
+          "text": "Quel est le gaz le plus abondant dans l'atmosphère terrestre ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "L'oxygène" },
+            { "text": "Le dioxyde de carbone" },
+            { "text": "L'azote", "isCorrect": true },
+            { "text": "L'argon" }
+          ]
+        },
+        {
+          "text": "Quel scientifique a découvert la pénicilline en 1928 ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Louis Pasteur" },
+            { "text": "Robert Koch" },
+            { "text": "Edward Jenner" },
+            { "text": "Alexander Fleming", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quelle est la planète la plus chaude du système solaire ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Mercure" },
+            { "text": "Vénus", "isCorrect": true },
+            { "text": "Mars" },
+            { "text": "Jupiter" }
+          ]
+        },
+        {
+          "text": "Quelle est l'unité de mesure de la résistance électrique ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "L'ohm", "isCorrect": true },
+            { "text": "Le volt" },
+            { "text": "L'ampère" },
+            { "text": "Le watt" }
+          ]
+        },
+        {
+          "text": "Combien de chromosomes contient une cellule humaine non reproductrice ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "23" },
+            { "text": "44" },
+            { "text": "46", "isCorrect": true },
+            { "text": "48" }
+          ]
+        },
+        {
+          "text": "Quel savant français a mis au point le vaccin contre la rage ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Claude Bernard" },
+            { "text": "Pierre Curie" },
+            { "text": "Antoine Lavoisier" },
+            { "text": "Louis Pasteur", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel est l'élément chimique le plus abondant dans l'Univers ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "L'hydrogène", "isCorrect": true },
+            { "text": "L'hélium" },
+            { "text": "L'oxygène" },
+            { "text": "Le carbone" }
+          ]
+        },
+        {
+          "text": "Quel est le numéro atomique du carbone ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "12" },
+            { "text": "6", "isCorrect": true },
+            { "text": "8" },
+            { "text": "14" }
+          ]
+        },
+        {
+          "text": "Quelle particule a été découverte au CERN en 2012 ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Le neutrino" },
+            { "text": "Le quark top" },
+            { "text": "Le boson de Higgs", "isCorrect": true },
+            { "text": "L'électron" }
+          ]
+        },
+        {
+          "text": "Qui a établi les lois de l'hérédité en croisant des petits pois ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Charles Darwin" },
+            { "text": "Jean-Baptiste Lamarck" },
+            { "text": "Louis Pasteur" },
+            { "text": "Gregor Mendel", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel est le seul métal liquide à température ambiante ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Le plomb" },
+            { "text": "Le mercure", "isCorrect": true },
+            { "text": "L'étain" },
+            { "text": "Le sodium" }
+          ]
+        },
+        {
+          "text": "Quelle est, environ, l'accélération de la pesanteur à la surface de la Terre ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "9,8 m/s²", "isCorrect": true },
+            { "text": "3,7 m/s²" },
+            { "text": "1,6 m/s²" },
+            { "text": "24,8 m/s²" }
+          ]
+        },
+        {
+          "text": "Quelle est, environ, la demi-vie du carbone 14, utilisé pour dater les fossiles récents ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "573 ans" },
+            { "text": "57 300 ans" },
+            { "text": "5 730 ans", "isCorrect": true },
+            { "text": "1 million d'années" }
+          ]
+        },
+        {
+          "text": "Quel savant a découvert en 1610 les quatre plus grandes lunes de Jupiter ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Nicolas Copernic" },
+            { "text": "Johannes Kepler" },
+            { "text": "Tycho Brahe" },
+            { "text": "Galilée", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quelle planète met le plus de temps à faire le tour du Soleil ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Uranus" },
+            { "text": "Saturne" },
+            { "text": "Neptune", "isCorrect": true },
+            { "text": "Jupiter" }
+          ]
+        },
+        {
+          "text": "Quel est le pH d'une solution neutre à 25 °C ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "0" },
+            { "text": "1" },
+            { "text": "14" },
+            { "text": "7", "isCorrect": true }
+          ]
+        }
+      ]
+    }
+  ]
+}
