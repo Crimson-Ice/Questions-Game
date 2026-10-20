@@ -26,7 +26,7 @@
         },
         {
           "text": "Quel empereur français a fini sa vie en exil sur l'île de Sainte-Hélène ?",
-          "difficulty": "Easy",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Napoléon III" },
             { "text": "Charlemagne" },
@@ -96,7 +96,7 @@
         },
         {
           "text": "Qui fut le premier président des États-Unis ?",
-          "difficulty": "Easy",
+          "difficulty": "Medium",
           "answers": [
             { "text": "Abraham Lincoln" },
             { "text": "George Washington", "isCorrect": true },
@@ -126,11 +126,11 @@
         },
         {
           "text": "Quelle bataille de 1815 marque la défaite définitive de Napoléon ?",
-          "difficulty": "Medium",
+          "difficulty": "Easy",
           "answers": [
             { "text": "Austerlitz" },
             { "text": "Iéna" },
-            { "text": "Trafalgar" },
+            { "text": "Wagram" },
             { "text": "Waterloo", "isCorrect": true }
           ]
         },
@@ -156,7 +156,7 @@
         },
         {
           "text": "Qui a lancé l'appel du 18 juin 1940 depuis Londres ?",
-          "difficulty": "Medium",
+          "difficulty": "Easy",
           "answers": [
             { "text": "Charles de Gaulle", "isCorrect": true },
             { "text": "Philippe Leclerc de Hauteclocque" },
@@ -215,7 +215,7 @@
           ]
         },
         {
-          "text": "Quel édit, signé par Henri IV en 1598, accordait la liberté de culte aux protestants ?",
+          "text": "Quel édit, signé par Henri IV en 1598, accordait des droits religieux et civils aux protestants ?",
           "difficulty": "Hard",
           "answers": [
             { "text": "L'édit de Nantes", "isCorrect": true },
