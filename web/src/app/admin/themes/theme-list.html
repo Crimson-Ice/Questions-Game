@@ -1,0 +1,83 @@
+<h3 class="mb-4 text-lg font-semibold">Thèmes</h3>
+
+<form [formGroup]="createForm" (ngSubmit)="create()" novalidate class="mb-6 flex flex-wrap items-start gap-2">
+  <label class="flex flex-col gap-1">
+    <span class="text-sm">Nom du thème</span>
+    <input formControlName="name" class="rounded border px-3 py-2" />
+    @if (createForm.controls.name.touched && createForm.controls.name.invalid) {
+      <span class="text-sm text-red-600">Le nom est obligatoire (100 caractères au plus).</span>
+    }
+  </label>
+  <label class="flex flex-col gap-1">
+    <span class="text-sm">Icône (facultative)</span>
+    <input formControlName="icon" class="w-24 rounded border px-3 py-2" />
+  </label>
+  <button
+    type="submit"
+    [disabled]="saving()"
+    class="mt-6 rounded bg-blue-600 px-4 py-2 font-medium text-white disabled:opacity-50"
+  >
+    Ajouter
+  </button>
+</form>
+
+@if (error(); as message) {
+  <p role="alert" class="mb-4 text-red-600">{{ message }}</p>
+}
+
+@if (themes.hasValue()) {
+  <table class="w-full border-collapse text-left">
+    <thead>
+      <tr class="border-b">
+        <th class="py-2">Icône</th>
+        <th class="py-2">Nom</th>
+        <th class="py-2">Questions</th>
+        <th class="py-2"><span class="sr-only">Actions</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (theme of themes.value(); track theme.id) {
+        <tr class="border-b" data-testid="theme-row">
+          @if (editingId() === theme.id) {
+            <td class="py-2" colspan="2">
+              <form [formGroup]="editForm" (ngSubmit)="saveEdit(theme.id)" novalidate class="flex gap-2">
+                <input formControlName="icon" aria-label="Icône" class="w-16 rounded border px-2 py-1" />
+                <input formControlName="name" aria-label="Nom du thème" class="rounded border px-2 py-1" />
+                <button type="submit" [disabled]="saving()" class="rounded bg-blue-600 px-3 py-1 text-white">
+                  Enregistrer
+                </button>
+                <button type="button" (click)="cancelEdit()" class="rounded border px-3 py-1">Annuler</button>
+              </form>
+            </td>
+          } @else {
+            <td class="py-2">{{ theme.icon }}</td>
+            <td class="py-2">{{ theme.name }}</td>
+          }
+          <td class="py-2">{{ theme.questionCount }}</td>
+          <td class="py-2 text-right">
+            @if (editingId() !== theme.id) {
+              <button type="button" (click)="startEdit(theme)" class="mr-2 rounded border px-3 py-1">Renommer</button>
+            }
+            <button
+              type="button"
+              (click)="remove(theme)"
+              [disabled]="theme.questionCount > 0 || saving()"
+              [title]="theme.questionCount > 0 ? 'Supprimez ou déplacez d\'abord ses questions.' : ''"
+              class="rounded border px-3 py-1 text-red-700 disabled:opacity-40"
+            >
+              Supprimer
+            </button>
+          </td>
+        </tr>
+      } @empty {
+        <tr>
+          <td colspan="4" class="py-4 text-gray-500">Aucun thème pour l'instant.</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+} @else if (themes.error()) {
+  <p role="alert" class="text-red-600">Impossible de charger les thèmes.</p>
+} @else {
+  <p class="text-gray-500">Chargement…</p>
+}

@@ -1,7 +1,7 @@
 import { inject } from '@angular/core';
-import { CanActivateFn, Router } from '@angular/router';
+import { CanActivateChildFn, CanActivateFn, Router } from '@angular/router';
 import { AuthService } from './auth';
 
-/** Laisse passer vers le back-office seulement un administrateur connecté (jeton non expiré). */
-export const adminGuard: CanActivateFn = () =>
+/** Laisse passer vers le back-office (et ses pages enfants) seulement un administrateur connecté. */
+export const adminGuard: CanActivateFn & CanActivateChildFn = () =>
   inject(AuthService).isLoggedIn() || inject(Router).createUrlTree(['/admin/login']);

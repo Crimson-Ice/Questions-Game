@@ -1,5 +1,10 @@
 <header class="flex items-center justify-between border-b px-8 py-4">
-  <h2 class="text-xl font-semibold">Back-office</h2>
+  <div class="flex items-center gap-6">
+    <h2 class="text-xl font-semibold">Back-office</h2>
+    <nav class="flex gap-4">
+      <a routerLink="themes" routerLinkActive="font-semibold underline">Thèmes</a>
+    </nav>
+  </div>
   <button type="button" (click)="logout()" class="rounded border px-3 py-1">Se déconnecter</button>
 </header>
 
