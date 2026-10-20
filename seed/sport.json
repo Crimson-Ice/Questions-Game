@@ -1,0 +1,310 @@
+{
+  "themes": [
+    {
+      "name": "Sport",
+      "icon": "⚽",
+      "questions": [
+        {
+          "text": "Combien de joueurs une équipe de football aligne-t-elle sur le terrain ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "10" },
+            { "text": "11", "isCorrect": true },
+            { "text": "9" },
+            { "text": "12" }
+          ]
+        },
+        {
+          "text": "Tous les combien d'années ont lieu les Jeux olympiques d'été ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "4 ans", "isCorrect": true },
+            { "text": "2 ans" },
+            { "text": "3 ans" },
+            { "text": "5 ans" }
+          ]
+        },
+        {
+          "text": "Dans quel sport utilise-t-on une raquette et un volant ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Le tennis" },
+            { "text": "Le squash" },
+            { "text": "Le badminton", "isCorrect": true },
+            { "text": "Le tennis de table" }
+          ]
+        },
+        {
+          "text": "Quelle ville a accueilli les Jeux olympiques d'été de 2024 ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Los Angeles" },
+            { "text": "Tokyo" },
+            { "text": "Londres" },
+            { "text": "Paris", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "De quelle couleur est le maillot du leader du classement général du Tour de France ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Vert" },
+            { "text": "Jaune", "isCorrect": true },
+            { "text": "Blanc" },
+            { "text": "À pois rouges" }
+          ]
+        },
+        {
+          "text": "Dans quel sport Teddy Riner s'est-il illustré ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Le judo", "isCorrect": true },
+            { "text": "La lutte" },
+            { "text": "La boxe" },
+            { "text": "Le karaté" }
+          ]
+        },
+        {
+          "text": "Quel pays a remporté la Coupe du monde de football 2018 ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "La Croatie" },
+            { "text": "La Belgique" },
+            { "text": "La France", "isCorrect": true },
+            { "text": "Le Brésil" }
+          ]
+        },
+        {
+          "text": "Combien d'anneaux figurent sur le drapeau olympique ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "4" },
+            { "text": "6" },
+            { "text": "7" },
+            { "text": "5", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel sport se joue à six contre six, de part et d'autre d'un filet, avec un ballon qu'on ne doit pas laisser tomber ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Le handball" },
+            { "text": "Le volley-ball", "isCorrect": true },
+            { "text": "Le basket-ball" },
+            { "text": "Le water-polo" }
+          ]
+        },
+        {
+          "text": "Quel tournoi du Grand Chelem se joue sur terre battue à Paris ?",
+          "difficulty": "Easy",
+          "answers": [
+            { "text": "Roland-Garros", "isCorrect": true },
+            { "text": "Wimbledon" },
+            { "text": "L'US Open" },
+            { "text": "L'Open d'Australie" }
+          ]
+        },
+        {
+          "text": "Combien de points rapporte un essai au rugby à XV, sans la transformation ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "3" },
+            { "text": "4" },
+            { "text": "5", "isCorrect": true },
+            { "text": "7" }
+          ]
+        },
+        {
+          "text": "Combien de sets faut-il gagner pour remporter un match masculin en Grand Chelem ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "2" },
+            { "text": "3", "isCorrect": true },
+            { "text": "4" },
+            { "text": "5" }
+          ]
+        },
+        {
+          "text": "Quelle est la distance officielle d'un marathon ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "40 km" },
+            { "text": "42 km" },
+            { "text": "45,5 km" },
+            { "text": "42,195 km", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Quel sprinteur a établi en 2009 le record du monde du 100 mètres, en 9 s 58 ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Usain Bolt", "isCorrect": true },
+            { "text": "Yohan Blake" },
+            { "text": "Asafa Powell" },
+            { "text": "Carl Lewis" }
+          ]
+        },
+        {
+          "text": "Dans quel pays sont nés les Jeux olympiques de l'Antiquité ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "L'Italie" },
+            { "text": "La Grèce", "isCorrect": true },
+            { "text": "L'Égypte" },
+            { "text": "La Turquie" }
+          ]
+        },
+        {
+          "text": "Combien de joueurs par équipe sont sur le terrain au basket-ball ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "4" },
+            { "text": "6" },
+            { "text": "5", "isCorrect": true },
+            { "text": "7" }
+          ]
+        },
+        {
+          "text": "Quel joueur français a remporté le Ballon d'or en 1998 ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Thierry Henry" },
+            { "text": "Didier Deschamps" },
+            { "text": "Michel Platini" },
+            { "text": "Zinedine Zidane", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Dans quel sport Marie-José Pérec a-t-elle remporté trois titres olympiques ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "L'athlétisme", "isCorrect": true },
+            { "text": "La natation" },
+            { "text": "Le judo" },
+            { "text": "L'escrime" }
+          ]
+        },
+        {
+          "text": "Combien de temps dure un match de football, hors arrêts de jeu et prolongations ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "80 minutes" },
+            { "text": "90 minutes", "isCorrect": true },
+            { "text": "100 minutes" },
+            { "text": "120 minutes" }
+          ]
+        },
+        {
+          "text": "Quel pilote allemand a remporté sept titres de champion du monde de Formule 1 ?",
+          "difficulty": "Medium",
+          "answers": [
+            { "text": "Sebastian Vettel" },
+            { "text": "Nico Rosberg" },
+            { "text": "Niki Lauda" },
+            { "text": "Michael Schumacher", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "En quelle année ont eu lieu les premiers Jeux olympiques de l'ère moderne ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "1888" },
+            { "text": "1896", "isCorrect": true },
+            { "text": "1900" },
+            { "text": "1924" }
+          ]
+        },
+        {
+          "text": "Qui est à l'origine de la rénovation des Jeux olympiques à la fin du XIXe siècle ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Jules Rimet" },
+            { "text": "Henri Desgrange" },
+            { "text": "Pierre de Coubertin", "isCorrect": true },
+            { "text": "Gabriel Hanot" }
+          ]
+        },
+        {
+          "text": "À quelle hauteur se trouve un panier de basket-ball réglementaire ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "2,85 m" },
+            { "text": "3,25 m" },
+            { "text": "3,50 m" },
+            { "text": "3,05 m", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Dans quel sport remet-on la Coupe Stanley ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Le hockey sur glace", "isCorrect": true },
+            { "text": "Le baseball" },
+            { "text": "Le football américain" },
+            { "text": "Le basket-ball" }
+          ]
+        },
+        {
+          "text": "Quelle ville a accueilli les premiers Jeux olympiques d'hiver, en 1924 ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Saint-Moritz" },
+            { "text": "Chamonix", "isCorrect": true },
+            { "text": "Lake Placid" },
+            { "text": "Oslo" }
+          ]
+        },
+        {
+          "text": "Combien de fois Bernard Hinault a-t-il remporté le Tour de France ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "3" },
+            { "text": "4" },
+            { "text": "5", "isCorrect": true },
+            { "text": "7" }
+          ]
+        },
+        {
+          "text": "Au golf, comment appelle-t-on un trou réussi en deux coups de moins que le par ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Un birdie" },
+            { "text": "Un albatros" },
+            { "text": "Un bogey" },
+            { "text": "Un eagle", "isCorrect": true }
+          ]
+        },
+        {
+          "text": "Combien de joueurs par équipe sont sur le terrain au handball, gardien compris ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "6" },
+            { "text": "7", "isCorrect": true },
+            { "text": "8" },
+            { "text": "11" }
+          ]
+        },
+        {
+          "text": "Quel boxeur, né Cassius Clay, se surnommait lui-même « The Greatest » ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "Joe Frazier" },
+            { "text": "George Foreman" },
+            { "text": "Muhammad Ali", "isCorrect": true },
+            { "text": "Mike Tyson" }
+          ]
+        },
+        {
+          "text": "Quel pays a remporté la première Coupe du monde de football, en 1930 ?",
+          "difficulty": "Hard",
+          "answers": [
+            { "text": "L'Argentine" },
+            { "text": "Le Brésil" },
+            { "text": "L'Italie" },
+            { "text": "L'Uruguay", "isCorrect": true }
+          ]
+        }
+      ]
+    }
+  ]
+}
