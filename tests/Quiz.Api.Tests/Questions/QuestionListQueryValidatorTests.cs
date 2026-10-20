@@ -15,6 +15,7 @@ public class QuestionListQueryValidatorTests
     [Theory]
     [InlineData(1, 1)]
     [InlineData(5, 100)]
+    [InlineData(QuestionListQueryValidator.MaxPage, QuestionListQueryValidator.MaxPageSize)]
     public void Validate_WithPageAndPageSizeInRange_IsValid(int page, int pageSize)
     {
         Assert.True(_validator.Validate(new QuestionListQuery(page, pageSize)).IsValid);
@@ -23,7 +24,8 @@ public class QuestionListQueryValidatorTests
     [Theory]
     [InlineData(0)]
     [InlineData(-1)]
-    public void Validate_WithPageBelowOne_IsInvalid(int page)
+    [InlineData(int.MaxValue)]
+    public void Validate_WithPageOutOfRange_IsInvalid(int page)
     {
         var result = _validator.Validate(new QuestionListQuery(Page: page));
 

@@ -111,6 +111,7 @@ public class QuestionListEndpointTests(QuizApiFactory factory)
     [Theory]
     [InlineData("?page=0", nameof(QuestionListQuery.Page))]
     [InlineData("?pageSize=101", nameof(QuestionListQuery.PageSize))]
+    [InlineData("?page=2147483647", nameof(QuestionListQuery.Page))]
     public async Task List_WithInvalidPaging_ReturnsValidationProblemAsync(string queryString, string field)
     {
         using var client = await factory.CreateAdminClientAsync();
